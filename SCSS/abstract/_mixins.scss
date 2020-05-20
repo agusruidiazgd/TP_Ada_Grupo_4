@@ -1,0 +1,45 @@
+@import "./variables";
+
+@mixin display-flex ($justify-content) {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: $justify-content;
+}
+
+// screen size  //
+@mixin breakpoint-mobile-1 {
+    @media (min-width: 320px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-mobile-2 {
+    @media (min-width: 414px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet-1 {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-tablet-2 {
+    @media (min-width: 955px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin breakpoint-desktop-2 {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
