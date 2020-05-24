@@ -1,0 +1,34 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+#service{
+    .service-container{
+        @include display-flex (center);
+        text-align: center;
+        padding-right: $padding-m;
+        padding-left: $padding-m;
+        background-color: $color-grey-light-blue2;
+        h3,h4{
+            font-family:$font-primary;
+        }
+        p{
+            font-family:$font-secondary;
+        }
+        h3.service-tittle{
+            font-size:$font-xxl;
+            font-weight:$font-weight-semi-bold;
+            color: $color-grey-blue;
+            margin-bottom:$margin-s;
+        }
+        p.service-subtittle{
+            font-size:$font-xs;
+            font-weight:$font-weight-regular;
+            color: $color-grey-light-blue;
+            padding-bottom: $padding-xxxl;
+            margin:0;
+        }
+        
+    }
+    
+    
+}
