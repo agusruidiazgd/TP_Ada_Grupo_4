@@ -15,17 +15,11 @@
             font-family:$font-secondary;
         }
         h3.service-tittle{
-            font-size:$font-xxl;
-            font-weight:$font-weight-semi-bold;
-            color: $color-grey-blue;
-            margin-bottom:$margin-s;
+            @include main-tittle ($margin-s);
         }
         p.service-subtittle{
-            font-size:$font-xs;
-            font-weight:$font-weight-regular;
-            color: $color-grey-light-blue;
-            padding-bottom: $padding-xxxl;
-            margin:0;
+            @include sub-tittle(0,$padding-xxxl);
+            
         }
         
     }
