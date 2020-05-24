@@ -1,0 +1,28 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+#service{
+    .service-container{
+        @include display-flex (center);
+        text-align: center;
+        padding-right: $padding-m;
+        padding-left: $padding-m;
+        background-color: $color-grey-light-blue2;
+        h3,h4{
+            font-family:$font-primary;
+        }
+        p{
+            font-family:$font-secondary;
+        }
+        h3.service-tittle{
+            @include main-tittle ($margin-s);
+        }
+        p.service-subtittle{
+            @include sub-tittle(0,$padding-xxxl);
+            
+        }
+        
+    }
+    
+    
+}
