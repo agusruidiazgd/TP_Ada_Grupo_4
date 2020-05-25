@@ -1,0 +1,177 @@
+@import "../abstract/mixins";
+@import "../abstract/variables";
+
+@include breakpoint-mobile-1 {
+  .menu {
+    background-color: $color-white;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    @include display-flex(space-between);
+  }
+
+  header {
+    position: fixed;
+    width: 100%;
+
+    .container {
+      position: relative;
+      width: 100%;
+
+      .aside-nav {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(19, 39, 57, 0.8);
+
+        nav {
+          .nav-bg {
+            width: 260px;
+            height: 100vh;
+            padding-top: 18px;
+            background-color: rgba(19, 39, 57, 0.8);
+
+            ul {
+              margin-top: 0;
+              padding: 0;
+              padding-left: 15px;
+
+              li {
+                a {
+                  position: relative;
+                  display: block;
+                  position: relative;
+                  color: #fff;
+                  padding: 10px 20px;
+                  font-weight: 500;
+                  padding-right: 35px;
+
+                  .dropdown-icon {
+                    color: white;
+                    position: absolute;
+                    right: 15px;
+                  }
+                }
+
+                a.active {
+                  color: #74b5fc;
+                }
+              }
+            }
+
+            ul#dropdown-1 {
+              display: none;
+            }
+            ul#dropdown-2 {
+              display: none;
+            }
+
+            #input-dropdown-1:not(:checked) ~ li a label .fa-chevron-up {
+              display: none;
+            }
+            #input-dropdown-2:not(:checked) ~ li a label .fa-chevron-up {
+              display: none;
+            }
+
+            #input-dropdown-1:checked ~ li a label .fa-chevron-down {
+              display: none;
+            }
+            #input-dropdown-2:checked ~ li a label .fa-chevron-down {
+              display: none;
+            }
+
+            #input-dropdown-1:checked ~ ul#dropdown-1 {
+              display: block;
+            }
+
+            #input-dropdown-2:checked ~ ul#dropdown-2 {
+              display: block;
+            }
+
+            .close {
+              position: absolute;
+              top: 18px;
+              right: 28px;
+              font-size: 24px;
+              color: white;
+            }
+          }
+        }
+      }
+      .menu {
+        position: absolute;
+      }
+    }
+  }
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .logo {
+    width: 67px;
+    padding-left: $padding-m;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  // menu desplegable sidebar
+  .fa-bars {
+    color: #09488d;
+    font-size: $font-m;
+    padding-right: $padding-m;
+  }
+
+  li {
+    display: inline;
+    list-style: none;
+  }
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    font-family: $font-primary;
+    font-size: $font-xs;
+  }
+
+  .menu-button {
+    border: none;
+    background-color: $color-white;
+  }
+
+  .menu-button label {
+    border: none;
+    display: inline-block;
+    padding: 5px;
+  }
+
+  #input-menu:checked ~ section.aside-nav {
+    display: block;
+  }
+
+  #input-menu:checked ~ section.menu button {
+    display: none;
+  }
+
+  nav a {
+    display: block;
+  }
+
+  section.aside-nav,
+  .sign-out,
+  #input-menu,
+  #input-dropdown-1,
+  #input-dropdown-2 {
+    display: none;
+  }
+
+  .container-nav {
+    @include display-flex(space-between);
+    position: absolute;
+    width: 100%;
+  }
+}

@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: $justify-content;
 }
-
 // screen size  //
 @mixin breakpoint-mobile-1 {
     @media (min-width: 320px) {

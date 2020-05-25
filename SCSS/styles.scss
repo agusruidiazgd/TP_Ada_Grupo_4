@@ -1,5 +1,8 @@
 @import "./abstract/variables";
 @import "./abstract/mixins";
+@import "./Sections/header";
+@import "./Sections/hero";
+@import "./Components/buttons";
 
 body{
     margin:0;

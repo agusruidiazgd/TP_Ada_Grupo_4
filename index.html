@@ -1,12 +1,108 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/styles.css">
-</head>
-<body>
-    
-</body>
+    <script
+      src="https://kit.fontawesome.com/b6a4b85d75.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+
+  <body>
+    <div class="top" #top></div>
+    <header>
+      <div class="container">
+        <input type="checkbox" id="input-menu" />
+        <section class="menu">
+          <div class="logo">
+            <a href="#top"><img src="img/logo-tp.png" alt="logo" /></a>
+          </div>
+          <button class="menu-button">
+            <label for="input-menu">
+              <i class="fas fa-bars"></i>
+            </label>
+          </button>
+        </section>
+        <section class="aside-nav">
+          <nav>
+            <div class="nav-bg">
+              <label class="close" for="input-menu">
+                <i class="fas fa-times"></i>
+              </label>
+              <ul>
+                <input type="checkbox" id="input-dropdown-1">
+                <li><a class="active" href=" #">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li>
+                  <a href="#">
+                    Drop Down 
+                    <label class="dropdown-icon" for="input-dropdown-1">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-chevron-up"></i>
+                    </label>
+                  </a>
+                  
+                </li> 
+                
+                  <ul id="dropdown-1">
+                    <input type="checkbox" id="input-dropdown-2">
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li>
+                      <a href="#">Drop Down 2 
+                       <label class="dropdown-icon" for="input-dropdown-2">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-chevron-up"></i>
+                    </label>
+                  </a> 
+                  </li>
+                    <ul id="dropdown-2">
+                      <li><a href="#">Drop Down 1</a></li>
+                      <li><a href="#">Drop Down 2</a></li>
+                      <li><a href="#">Drop Down 3</a></li>
+                      <li><a href="#">Drop Down 4</a></li>
+                      <li><a href="#">Drop Down 5</a></li>
+                    </ul>
+                  </ul>
+                </li>
+                <li><a href="#">Conntact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    <div class="hero">
+      <img src="img/intro-img.svg" alt="" class="hero-img margin-button-30px" />
+      <div class="container-text-hero">
+        <h2>
+          We provide
+          <br />
+          <span class="color-blue-light"> <u>solutions</u> </span>
+          <br />
+          for your business!
+        </h2>
+      </div>
+      <div class="container-button">
+        <!-- agregar anchors -->
+        <a href="#about-us"
+          ><button class="button-hero button-light-blue">Get Started</button></a
+        >
+        <a href="#services">
+          <button class="button-hero button-border-white">
+            Our Services
+          </button></a
+        >
+      </div>
+    </div>
+  </body>
 </html>
