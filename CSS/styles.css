@@ -1,3 +1,48 @@
+#about-us {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 15px 0 15px; }
+  #about-us h3.about-tittle {
+    font-size: 36px;
+    font-weight: 500;
+    color: #283d50;
+    margin-bottom: 40px;
+    text-align: center; }
+  #about-us p {
+    font-family: "Open Sans", sans-serif; }
+  #about-us h3, #about-us h4 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 20px 0; }
+  #about-us p.about-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #556877;
+    padding-bottom: 60px;
+    margin: 0;
+    text-align: center; }
+  #about-us img {
+    width: 100%; }
+  #about-us p.about-main {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    color: #556877;
+    padding-bottom: 30px;
+    margin: 0; }
+  #about-us .main-about-us {
+    padding: 60px 0 0 0; }
+    #about-us .main-about-us div {
+      padding: 48px 0 0 0; }
+    #about-us .main-about-us h4 {
+      font-size: 24px;
+      color: #444444;
+      font-weight: 600; }
+    #about-us .main-about-us p {
+      color: #444444; }
+
 #service .service-container {
   align-items: center;
   display: flex;
@@ -65,6 +110,34 @@ div.service-card {
       font-size: 14px;
       color: #444444;
       line-height: 1.7; }
+
+div.about-card {
+  box-sizing: border-box;
+  display: flex; }
+  div.about-card div.about-card-content {
+    display: inline-block;
+    margin-left: 20px; }
+    div.about-card div.about-card-content h4 {
+      margin: 0 0 20px 0; }
+      div.about-card div.about-card-content h4 a {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        text-decoration: none;
+        color: #283d50; }
+    div.about-card div.about-card-content p.description {
+      font-size: 14px;
+      color: #444444;
+      line-height: 1.7; }
+  div.about-card div.about-icon {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid #007bfe; }
+    div.about-card div.about-icon i {
+      font-size: 24px;
+      color: #007bfe;
+      margin: 20px; }
 
 body {
   margin: 0;
