@@ -1,4 +1,5 @@
 @import "../abstract/variables";
+@import '../abstract/mixins';
 
 /* ESTILOS BUTTONS PORTFOLIO*/
 .portfolio-button-container {
@@ -27,3 +28,38 @@
     }        
 }           
 /* FIN ESTILOS BUTTONS PORTFOLIO*/
+
+.button-hero {
+    color: $color-white;
+    font-size: $font-xxs;
+    margin: 0 $padding-l $padding-l 0;
+    border-width: 3px;
+    border-radius: 50px;
+    font-family: $font-primary;
+    font-size: $font-xxs;
+    font-weight: $font-weight-bold-primary;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    outline: none;
+
+    &.button-light-blue {
+        background-color: $color-blue-medium;
+        border: 2px solid $color-blue-medium;
+    }
+
+    &.button-border-white {
+        background-color: transparent;
+        border: 2px solid $color-white;
+    }
+    &.button-border-white:hover {
+        background-color: $color-blue-medium;
+        border: 2px solid $color-blue-medium;
+
+    }
+    &.button-light-blue:hover {
+        background-color: transparent;
+        border: 2px solid $color-white;
+    }
+}
+
