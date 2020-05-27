@@ -1,0 +1,19 @@
+@import "../abstract/variables";
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ESTILOS ANCHORS WHY CHOOSE US*/
+.why-white-anchor {
+    border-bottom: 2px solid $color-blue-dark;
+    color: $color-white;
+    font-family: $font-secondary;
+    font-size: $font-s;
+    font-weight: $font-weight-bold-secondary;
+    &:visited {
+        color: $color-white;
+    }
+}
+/* FIN ESTILOS ANCHORS WHY CHOOSE US*/

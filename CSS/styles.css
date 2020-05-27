@@ -1,5 +1,304 @@
+a {
+  color: inherit;
+  text-decoration: none; }
 
-#about-us {
+/* ESTILOS ANCHORS WHY CHOOSE US*/
+.why-white-anchor {
+  border-bottom: 2px solid #004289;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700; }
+  .why-white-anchor:visited {
+    color: #fff; }
+
+/* FIN ESTILOS ANCHORS WHY CHOOSE US*/
+/* ESTILOS BUTTONS PORTFOLIO*/
+.portfolio-button-container button {
+  border: none;
+  border-radius: 23px;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  margin: 15px 5px 5px 5px;
+  padding: 6px 20px; }
+  .portfolio-button-container button.portfolio-button {
+    background-color: #ECF5FF;
+    color: #007bfe;
+    transition: background-color 0.3s linear; }
+    .portfolio-button-container button.portfolio-button:hover {
+      background-color: #007bfe;
+      color: #fff;
+      outline: none; }
+  .portfolio-button-container button.portfolio-button-selected {
+    background-color: #007bfe;
+    color: #fff; }
+
+/* FIN ESTILOS BUTTONS PORTFOLIO*/
+/*EMPIEZAN ESTILOS WHY CHOOSE US*/
+.why-choose-us {
+  background-color: #014999;
+  color: #fff;
+  padding: 60px 0; }
+  .why-choose-us h2, .why-choose-us h3, .why-choose-us .why-impact-numbers {
+    font-family: "Montserrat", sans-serif; }
+  .why-choose-us h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .why-choose-us h3 {
+    font-size: 22px;
+    font-weight: 600; }
+  .why-choose-us p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-align: center; }
+  .why-choose-us .why-p {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 60px;
+    width: 90%; }
+  .why-choose-us .why-card {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #004289;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    width: 362px; }
+    .why-choose-us .why-card:hover {
+      background-color: #003b7a; }
+    .why-choose-us .why-card i {
+      align-self: center;
+      color: #74b5fc;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 48px;
+      padding-top: 15px;
+      width: 100%; }
+    .why-choose-us .why-card .why-card-body {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px; }
+  .why-choose-us .why-impact-numbers {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+    .why-choose-us .why-impact-numbers .why-impact-numbers-block {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      width: 35%; }
+      .why-choose-us .why-impact-numbers .why-impact-numbers-block .impact-number {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 10px; }
+      .why-choose-us .why-impact-numbers .why-impact-numbers-block .impact-description {
+        font-size: 14px; }
+
+/*TERMINAN ESTILOS WHY CHOOSE US*/
+/*EMPIEZAN ESTILOS PORTFOLIO*/
+.our-portfolio {
+  padding: 60px 0;
+  position: relative; }
+  .our-portfolio h2 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .our-portfolio .portfolio-img {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    height: 250px;
+    margin: 30px 0px;
+    overflow: hidden;
+    position: relative;
+    width: 362px; }
+    .our-portfolio .portfolio-img img {
+      width: 115%; }
+      .our-portfolio .portfolio-img img.img-translate-3, .our-portfolio .portfolio-img img.img-translate-5, .our-portfolio .portfolio-img img.img-translate-6 {
+        position: absolute; }
+      .our-portfolio .portfolio-img img.img-translate-3 {
+        bottom: -150px;
+        right: -20px; }
+      .our-portfolio .portfolio-img img.img-translate-5 {
+        bottom: -150px;
+        right: -20px; }
+      .our-portfolio .portfolio-img img.img-translate-6 {
+        bottom: -145px;
+        right: 10px;
+        width: 100% !important; }
+    .our-portfolio .portfolio-img .portfolio-img-overlay {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba(0, 66, 138, 0.5);
+      color: #fff;
+      flex-direction: column;
+      height: 250px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 362px;
+      z-index: 10; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 4px; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay .portfolio-icon-container {
+        margin-top: 10px; }
+        .our-portfolio .portfolio-img .portfolio-img-overlay .portfolio-icon-container i {
+          background-color: #007bfe;
+          border-radius: 50%;
+          padding: 10px; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay:hover {
+        opacity: 1; }
+  .our-portfolio #portfolio-modal-1,
+  .our-portfolio #portfolio-modal-2,
+  .our-portfolio #portfolio-modal-3,
+  .our-portfolio #portfolio-modal-4,
+  .our-portfolio #portfolio-modal-5,
+  .our-portfolio #portfolio-modal-6,
+  .our-portfolio #portfolio-modal-7,
+  .our-portfolio #portfolio-modal-8,
+  .our-portfolio #portfolio-modal-9 {
+    background-color: rgba(13, 13, 14, 0.856);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw; }
+    .our-portfolio #portfolio-modal-1#portfolio-modal-1:target, .our-portfolio #portfolio-modal-1#portfolio-modal-2:target, .our-portfolio #portfolio-modal-1#portfolio-modal-3:target, .our-portfolio #portfolio-modal-1#portfolio-modal-4:target, .our-portfolio #portfolio-modal-1#portfolio-modal-5:target, .our-portfolio #portfolio-modal-1#portfolio-modal-6:target, .our-portfolio #portfolio-modal-1#portfolio-modal-7:target, .our-portfolio #portfolio-modal-1#portfolio-modal-8:target, .our-portfolio #portfolio-modal-1#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-9:target {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+  .our-portfolio .target-modal {
+    color: #DDDDDD;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    z-index: 100; }
+    .our-portfolio .target-modal .modal-img-container {
+      border: 3px solid #fff;
+      box-sizing: border-box;
+      height: auto;
+      margin-bottom: 5px;
+      position: relative;
+      overflow: hidden;
+      width: 330px; }
+      .our-portfolio .target-modal .modal-img-container img {
+        width: 100%; }
+    .our-portfolio .target-modal figcaption {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .our-portfolio .target-modal figcaption p {
+        margin: 0; }
+        .our-portfolio .target-modal figcaption p.caption-title {
+          font-weight: 700; }
+      .our-portfolio .target-modal figcaption i {
+        align-self: flex-start;
+        font-size: 48px; }
+
+/*TERMINAN ESTILOS PORTFOLIO*/
+  #about-us {
   align-items: center;
   display: flex;
   flex-wrap: wrap;

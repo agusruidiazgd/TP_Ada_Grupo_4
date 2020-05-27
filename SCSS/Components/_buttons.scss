@@ -1,5 +1,33 @@
+@import "../abstract/variables";
 @import '../abstract/mixins';
-@import '../abstract/variables';
+
+/* ESTILOS BUTTONS PORTFOLIO*/
+.portfolio-button-container {
+    button {
+        border: none;
+        border-radius: 23px;
+        box-sizing: border-box;
+        font-family: $font-secondary;
+        font-size: $font-xxxs;
+        margin: $margin-xs $margin-xxxs $margin-xxxs $margin-xxxs;
+        padding: $padding-xxs $padding-l;
+        &.portfolio-button {
+            background-color: $color-grey-extra-light;
+            color: $color-blue-medium;
+            transition: background-color 0.3s linear;
+            &:hover {
+                background-color: $color-blue-medium;
+                color: $color-white;
+                outline: none;
+            }
+        }
+        &.portfolio-button-selected {
+            background-color: $color-blue-medium;
+            color: $color-white;
+        }
+    }        
+}           
+/* FIN ESTILOS BUTTONS PORTFOLIO*/
 
 .button-hero {
     color: $color-white;
@@ -34,3 +62,4 @@
         border: 2px solid $color-white;
     }
 }
+

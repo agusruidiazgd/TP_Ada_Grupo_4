@@ -12,9 +12,12 @@ body{
 @import "./Sections/hero";
 @import "./Sections/about-us";
 @import"./Sections/services";
+@import "./Sections/why";
+@import "./Sections/portfolio";
 
 
 //components
+@import "./Components/anchor";
 @import "./Components/buttons";
 @import "./Components/cards";
 
