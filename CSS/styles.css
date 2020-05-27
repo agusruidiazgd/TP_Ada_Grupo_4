@@ -1,3 +1,4 @@
+
 @media (min-width: 320px) {
   .menu {
     background-color: #fff;
@@ -172,6 +173,75 @@ img {
   .button-hero.button-light-blue:hover {
     background-color: transparent;
     border: 2px solid #fff; }
+
+#service .service-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ecf5ff; }
+  #service .service-container h3, #service .service-container h4 {
+    font-family: "Montserrat", sans-serif; }
+  #service .service-container p {
+    font-family: "Open Sans", sans-serif; }
+  #service .service-container h3.service-tittle {
+    font-size: 36px;
+    font-weight: 500;
+    color: #283d50;
+    margin-bottom: 20px; }
+  #service .service-container p.service-subtittle {
+    font-size: 15px;
+    font-weight: 400;
+    color: #556877;
+    padding-bottom: 60px;
+    margin: 0; }
+
+div.service-card {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  padding: 30px;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin: 0 10px 40px 10px; }
+  div.service-card div.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -50px; }
+    div.service-card div.icon i {
+      font-size: 64px; }
+    div.service-card div.icon i.fab.fa-stumbleupon-circle {
+      color: #ff689b; }
+    div.service-card div.icon i.fas.fa-book {
+      color: #3fcdc7; }
+    div.service-card div.icon i.fas.fa-tachometer-alt {
+      color: #41cf2e; }
+    div.service-card div.icon i.fas.fa-globe {
+      color: #d6ff22; }
+    div.service-card div.icon i.far.fa-file-alt {
+      color: #e9bf06; }
+    div.service-card div.icon i.far.fa-clock {
+      color: #4680ff; }
+  div.service-card div.card-content {
+    display: inline-block; }
+    div.service-card div.card-content h4, div.service-card div.card-content p {
+      text-align: left; }
+    div.service-card div.card-content h4 {
+      font-weight: 600;
+      font-size: 18px;
+      margin: 0 0 15px 40px; }
+    div.service-card div.card-content p.description {
+      margin: 0 0 0 40px;
+      font-size: 14px;
+      color: #444444;
+      line-height: 1.7; }
+
 
 body {
   margin: 0;

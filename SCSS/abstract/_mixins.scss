@@ -6,6 +6,21 @@
     flex-wrap: wrap;
     justify-content: $justify-content;
 }
+
+@mixin main-tittle ($margin-tittle){
+    font-size:$font-xxl;
+    font-weight:$font-weight-semi-bold;
+    color: $color-grey-blue;
+    margin-bottom:$margin-tittle;
+}
+
+@mixin sub-tittle ($margin-subtittle,$padding-subtittle){
+    font-size:$font-xs;
+    font-weight:$font-weight-regular;
+    color: $color-grey-light-blue;
+    padding-bottom: $padding-subtittle;
+    margin:$margin-subtittle;
+}
 // screen size  //
 @mixin breakpoint-mobile-1 {
     @media (min-width: 320px) {
