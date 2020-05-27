@@ -1,0 +1,60 @@
+@import '../abstract/variables.scss';
+@import '../abstract/mixins.scss';
+
+#team {
+	background: $color-white;
+	box-sizing: border-box;
+	color: $color-grey-dark;
+	font-family: $font-secondary;
+	font-size: 1rem;
+	width: 100%;
+	padding-right: $padding-m;
+	padding-left: $padding-m;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: $padding-xxxl;
+	.team-header h2 {
+		font-size: $font-xl;
+		color: #283d50;
+		text-align: center;
+		font-weight: 500;
+		font-family: $font-primary;
+		padding: $padding-xxl 0 $padding-xl;
+		margin: 0;
+	}
+	.team-header p {
+		text-align: center;
+		font-weight: 300;
+		color: #556877;
+		margin: 0;
+		font-size: $font-xs;
+		padding-bottom: $padding-xxxl;
+	}
+	.all-team-members {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.team-member {
+		padding-bottom: $padding-m;
+		width: 300px;
+		height: 300px;
+		@include breakpoint-tablet-1 {
+			margin: 15px;
+		}
+		@include breakpoint-desktop {
+			margin: 15px;
+			width: 250px;
+			height: 250px;
+		}
+	}
+	.team-img {
+		border-radius: 50%;
+		max-width: 100%;
+	}
+	.member-info {
+		display: none;
+	}
+}

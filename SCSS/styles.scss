@@ -1,7 +1,11 @@
-@import "./abstract/variables";
-@import "./abstract/mixins";
+@import './abstract/variables';
+@import './abstract/mixins';
 
-body{
-    margin:0;
-    padding:0;
+@import './Sections/testimonials';
+@import './Sections/team';
+@import './Sections/our-clients';
+
+body {
+	margin: 0;
+	padding: 0;
 }
