@@ -706,12 +706,23 @@ img {
     font-weight: 500;
     color: #283d50;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #service .service-container h3.service-tittle {
+        width: 100%; } }
   #service .service-container p.service-subtittle {
     font-size: 15px;
     font-weight: 400;
     color: #556877;
     padding-bottom: 60px;
     margin: 0; }
+    @media (min-width: 768px) {
+      #service .service-container p.service-subtittle {
+        padding: 0 80px 60px 80px;
+        width: 50%;
+        margin: auto; } }
+    @media (min-width: 1200px) {
+      #service .service-container p.service-subtittle {
+        padding: 0 120px 60px 120px; } }
 
 div.service-card {
   display: flex;
@@ -724,10 +735,26 @@ div.service-card {
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 10px 40px 10px; }
+  @media (min-width: 768px) {
+    div.service-card {
+      box-sizing: content-box;
+      width: 250px;
+      padding: 30px;
+      margin: 0 15px 40px 15px; } }
+  @media (min-width: 955px) {
+    div.service-card {
+      width: 290px;
+      margin: 0 25px 40px 25px; } }
+  @media (min-width: 1200px) {
+    div.service-card {
+      width: 365px; } }
   div.service-card div.icon {
     display: inline-block;
     vertical-align: middle;
     margin-left: -50px; }
+    @media (min-width: 768px) {
+      div.service-card div.icon {
+        margin-left: -45px; } }
     div.service-card div.icon i {
       font-size: 64px; }
     div.service-card div.icon i.fab.fa-stumbleupon-circle {
