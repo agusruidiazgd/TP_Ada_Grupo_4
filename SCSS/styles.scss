@@ -1,6 +1,14 @@
 @import "./abstract/variables";
 @import "./abstract/mixins";
 
+@import "./Components/anchor";
+@import "./Components/buttons";
+
+@import "./Sections/why";
+@import "./Sections/portfolio";
+
+
+
 body{
     margin:0;
     padding:0;
