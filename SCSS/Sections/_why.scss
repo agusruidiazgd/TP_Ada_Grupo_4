@@ -1,0 +1,81 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+
+/*EMPIEZAN ESTILOS WHY CHOOSE US*/
+
+.why-choose-us {
+    @include display-flex (center);
+    background-color: $color-navy-blue-medium;
+    color: $color-white;
+    padding: $padding-xxxl 0;
+    h2, h3, .why-impact-numbers {
+        font-family: $font-primary;
+    }
+    h2 {
+        font-size: $font-xxl;
+        font-weight: $font-weight-semi-bold;
+        margin-bottom: $margin-s;
+    }
+    h3 {
+        font-size: $font-m;
+        font-weight: $font-weight-bold-primary;
+    }
+    p {
+        font-family: $font-secondary;
+        font-size: $font-xs;
+        margin-bottom: $margin-m;
+        text-align: center;
+    }
+    .why-p {
+        text-align: center;
+        margin: 0;
+        padding-bottom: $padding-xxxl;
+        width: 90%;
+    }
+    .why-card {
+        @include display-flex (center);
+        background-color: $color-blue-dark;
+        border-radius: 10px;
+        margin: $margin-xs;
+        padding: $padding-m;
+        width: 362px;
+        &:hover {
+            background-color: darken($color: $color-blue-dark, $amount: 3);
+        }
+        i {
+            align-self: center;
+            color: $color-blue-light;
+            @include display-flex (center);
+            font-size: $font-xxxl;
+            padding-top: $padding-m;
+            width: 100%;
+        }
+        .why-card-body {
+            @include display-flex (center);
+            padding: $padding-m;
+        }
+    }
+    
+    .why-impact-numbers {
+        @include display-flex (center);
+        padding-top: $padding-xxl;
+        .why-impact-numbers-block {
+            @include display-flex (center);
+            flex-direction: column;
+            padding: $padding-l;
+            width: 35%;
+            .impact-number {
+                font-size: $font-xxxl;
+                font-weight: $font-weight-bold-primary;
+                margin-bottom: $margin-xxs;
+            }
+            .impact-description {
+                font-size: $font-xxs;
+            }
+        }
+        
+    }
+}
+
+/*TERMINAN ESTILOS WHY CHOOSE US*/
