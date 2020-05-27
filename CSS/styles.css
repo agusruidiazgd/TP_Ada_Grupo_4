@@ -294,6 +294,7 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     border-radius: 10px;
+    box-sizing: border-box;
     height: 250px;
     margin: 30px 0px;
     overflow: hidden;
