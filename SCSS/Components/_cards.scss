@@ -1,0 +1,100 @@
+@import"../abstract/variables";
+@import"../abstract/mixins";
+
+div.service-card{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color:$color-white ;
+    border-radius:10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    padding:$padding-xl;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 $margin-xxs $margin-l $margin-xxs;
+    div.icon{
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: -50px;
+        i{
+            font-size: 64px; 
+        }
+        i.fab{
+            &.fa-stumbleupon-circle{
+                color: #ff689b;
+            }
+        }
+        i.fas{
+            &.fa-book{
+                color: #3fcdc7
+            }
+            &.fa-tachometer-alt{
+                color: #41cf2e;
+            }
+            &.fa-globe{
+                color: #d6ff22;
+            }
+        }
+        i.far{
+            &.fa-file-alt{
+                color: #e9bf06;
+            }
+            &.fa-clock{
+                color: #4680ff;
+            }
+        }   
+    }
+    div.card-content{
+        display: inline-block;
+        h4,p{
+            text-align: left;
+        }
+        h4{
+            font-weight: $font-weight-bold-primary;
+            font-size:$font-s2;
+            margin:0 0 $margin-xs $margin-l;
+        }
+        p.description{
+            margin:0 0 0 $margin-l;
+            font-size: $font-xxs;
+            color:$color-grey-dark;
+            line-height:1.7;
+        }
+    }
+    
+}
+
+div.about-card{
+    box-sizing: border-box;
+    display: flex;
+    div.about-card-content{
+        display: inline-block;
+        margin-left:$margin-s;
+        h4{
+            margin: 0 0 20px 0;
+            a{
+                font-family: $font-primary;
+                font-weight: $font-weight-bold-primary;
+                text-decoration: none;
+                color: $color-grey-blue;
+            }
+        } 
+        p.description{
+            font-size: $font-xxs;
+            color:$color-grey-dark;
+            line-height: 1.7;
+        }
+    }
+    div.about-icon{
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 2px solid $color-blue-medium;
+        i{
+            font-size: 24px;
+            color:$color-blue-medium;
+            margin: 20px;
+        }
+    }
+}

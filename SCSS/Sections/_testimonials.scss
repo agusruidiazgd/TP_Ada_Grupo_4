@@ -1,0 +1,70 @@
+@import '../abstract/variables.scss';
+@import '../abstract/mixins.scss';
+
+#testimonials {
+	box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+	background: #ecf5ff;
+	box-sizing: border-box;
+	color: $color-grey-dark;
+	font-family: $font-secondary;
+	font-size: 1rem;
+	width: 100%;
+	padding-right: $padding-m;
+	padding-left: $padding-m;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: $padding-xxxl;
+
+	.testimonials-header h2 {
+		font-size: $font-xl;
+		color: #283d50;
+		text-align: center;
+		font-weight: 500;
+		font-family: $font-primary;
+		padding: $padding-xxl 0;
+		margin: 0;
+	}
+	.testimonial-people {
+		justify-content: center;
+		align-items: center;
+
+		display: none;
+		flex-direction: column;
+		width: 100%;
+		@include breakpoint-tablet-1 {
+			flex-direction: row;
+			width: 700px;
+			margin: auto;
+		}
+	}
+	.active {
+		display: flex;
+	}
+	.testimonial-img {
+		border-radius: 50%;
+		border: 4px solid $color-white;
+		width: 120px;
+	}
+	.testimonial-content {
+		margin: 10px 0 5px 0px;
+		text-align: center;
+		@include breakpoint-tablet-1 {
+			text-align: left;
+			margin-left: 15px;
+		}
+	}
+	.testimonial-content h3 {
+		font-size: $font-l;
+		color: $color-black;
+		margin: 0;
+	}
+	.testimonial-content h4 {
+		color: #999;
+		font-size: $font-s;
+		margin: 0;
+		font-weight: 400;
+	}
+	.testimonial-content p {
+		font-style: italic;
+	}
+}

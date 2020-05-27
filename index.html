@@ -1,13 +1,252 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/b6a4b85d75.js"
+      crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+			crossorigin="anonymous"
+		/>
     <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
+    <div class="top" #top></div>
+    <header>
+      <div class="container">
+        <input type="checkbox" id="input-menu" />
+        <section class="menu">
+          <div class="logo">
+            <a href="#top"><img src="img/logo-tp.png" alt="logo" /></a>
+          </div>
+          <button class="menu-button">
+            <label for="input-menu">
+              <i class="fas fa-bars"></i>
+            </label>
+          </button>
+        </section>
+        <section class="aside-nav">
+          <nav>
+            <div class="nav-bg">
+              <label class="close" for="input-menu">
+                <i class="fas fa-times"></i>
+              </label>
+              <ul class="parent">
+                <input type="checkbox" id="input-dropdown-1">
+                <li><a class="active" href=" #">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Team</a></li>
+                <li id="li-1">
+                  <a href="#">
+                    Drop Down 
+                    <label class="dropdown-icon" for="input-dropdown-1">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-chevron-up"></i>
+                    </label>
+                  </a>
+                  
+                </li> 
+                
+                  <ul id="dropdown-1">
+                    <input type="checkbox" id="input-dropdown-2">
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li id="li-2">
+                      <a href="#">Drop Down 2 
+                       <label class="dropdown-icon" for="input-dropdown-2">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-chevron-up"></i>
+                    </label>
+                  </a> 
+                  </li>
+                    <ul id="dropdown-2">
+                      <li><a href="#">Drop Down 1</a></li>
+                      <li><a href="#">Drop Down 2</a></li>
+                      <li><a href="#">Drop Down 3</a></li>
+                      <li><a href="#">Drop Down 4</a></li>
+                      <li><a href="#">Drop Down 5</a></li>
+                    </ul>
+                  </ul>
+                </li>
+                <li><a href="#">Conntact Us</a></li>
+              </ul>
+            </div>
+          </nav>
+        </section>
+      </div>
+    </header>
+
+    <div class="hero">
+      <img src="img/intro-img.svg" alt="" class="hero-img margin-button-30px" />
+      <div class="container-text-hero">
+        <h2>
+          We provide
+          <br />
+          <span class="color-blue-light"> <u>solutions</u> </span>
+          <br />
+          for your business!
+        </h2>
+      </div>
+      <div class="container-button">
+        <!-- agregar anchors -->
+        <a href="#about-us"
+          ><button class="button-hero button-light-blue">Get Started</button></a
+        >
+        <a href="#services">
+          <button class="button-hero button-border-white">
+            Our Services
+          </button></a
+        >
+      </div>
+    </div>
+    <!------start About Us------->
+    <section id="about-us">
+        <h3 class="about-tittle">About Us</h3> 
+        <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="img/about-img.svg">
+        <p class="about-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div class="container-about">
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="about-card-content">
+                    <h4><a href="#">Eiusmod Tempor</a></h4>
+                    <p class="description">
+                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
+                    </p>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="far fa-image"></i>
+                </div>
+                <div class="about-card-content">
+                    <h4><a href="#">Magni Dolores</a></h4>
+                    <p class="description">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    </p>
+                </div>
+            </div>
+            <div class="about-card">
+                <div class="about-icon">
+                    <i class="far fa-chart-bar"></i>
+                </div>
+                <div class="about-card-content">
+                    <h4><a href="#">Dolor Sitema</a></h4>
+                    <p class="description">
+                        Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="main-about-us">
+            <img class="2nd-img"src="img/about-extra-1.svg">
+            <div>
+                <h4>
+                    Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
+                </h4>
+                <p class="about-main">
+                    Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+                </p>
+                <p class="about-main">
+                    Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+                </p>
+            </div>
+        </div>
+        <div class="main-about-us">
+            <img src="img/about-extra-2.svg">
+            <div>
+                <h4>
+                    Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
+                </h4>
+                <p>
+                    Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
+                </p>
+                <p>
+                    Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
+                </p>
+                <p>
+                    Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
+                </p>
+            </div>
+            
+        </div>
+        
+    </section>
+<!------finish About Us------->
+
+<!--------start services---------->
+    <section id="service">
+        <div class="service-container">
+            <h3 class="service-tittle">Services</h3>
+            <p class="service-subtittle">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+            
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fab fa-stumbleupon-circle"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Lorem Ipsum</h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="far fa-file-alt"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Dolor Sitema</h4>
+                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Sed ut perspiciatis</h4>
+                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fas fa-tachometer-alt"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Magni Dolores</h4>
+                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Nemo Enim</h4>
+                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="far fa-clock"></i>
+                </div>
+                <div class="card-content">
+                    <h4>Eiusmod Tempor</h4>
+                    <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+                </div>
+            </div>
+        </div>
+    </section> 
+<!--------finish services---------->
     <section class="why-choose-us">
         <h2>Why choose us?</h2>
         <p class="why-p">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
@@ -368,5 +607,209 @@
         </div>
         <!-- ACÁ TERMINAN LAS VENTANAS MODALES DE PORTFOLIO-->
     </section>
+    	<!-- Testimonials -->
+		<section id="testimonials">
+			<header class="testimonials-header">
+				<h2>Testimonials</h2>
+			</header>
+
+			<div class="testimonial-people active">
+				<img src="img/testimonial-1.jpg" class="testimonial-img" alt="" />
+				<div class="testimonial-content">
+					<h3>Saul Goodman</h3>
+					<h4>Ceo & Founder</h4>
+					<p>
+						Proin iaculis purus consequat sem cure digni ssim donec porttitora
+						entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam
+						eget nibh et. Maecen aliquam, risus at semper.
+					</p>
+				</div>
+			</div>
+
+			<div class="testimonial-people">
+				<img src="img/testimonial-2.jpg" class="testimonial-img" alt="" />
+				<div class="testimonial-content">
+					<h3>Sara Wilsson</h3>
+					<h4>Designer</h4>
+					<p>
+						Export tempor illum tamen malis malis eram quae irure esse labore
+						quem cillum quid cillum eram malis quorum velit fore eram velit sunt
+						aliqua noster fugiat irure amet legam anim culpa.
+					</p>
+				</div>
+			</div>
+
+			<div class="testimonial-people">
+				<img src="img/testimonial-3.jpg" class="testimonial-img" alt="" />
+				<div class="testimonial-content">
+					<h3>Jena Karlis</h3>
+					<h4>Store Owner</h4>
+					<p>
+						Enim nisi quem export duis labore cillum quae magna enim sint quorum
+						nulla quem veniam duis minim tempor labore quem eram duis noster
+						aute amet eram fore quis sint minim.
+					</p>
+				</div>
+			</div>
+
+			<div class="testimonial-people">
+				<img src="img/testimonial-4.jpg" class="testimonial-img" alt="" />
+				<div class="testimonial-content">
+					<h3>Matt Brandon</h3>
+					<h4>Freelancer</h4>
+					<p>
+						Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+						export minim fugiat minim velit minim dolor enim duis veniam ipsum
+						anim magna sunt elit fore quem dolore labore illum veniam.
+					</p>
+				</div>
+			</div>
+
+			<div class="testimonial-people">
+				<img src="img/testimonial-5.jpg" class="testimonial-img" alt="" />
+				<div class="testimonial-content">
+					<h3>John Larson</h3>
+					<h4>Entrepreneur</h4>
+					<p>
+						Quis quorum aliqua sint quem legam fore sunt eram irure aliqua
+						veniam tempor noster veniam enim culpa labore duis sunt culpa nulla
+						illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+					</p>
+				</div>
+			</div>
+		</section>
+		<!-- Testimonials -->
+
+		<!-- Team -->
+		<section id="team">
+			<div class="team-header">
+				<h2>Team</h2>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque
+				</p>
+			</div>
+			<div class="all-team-members">
+				<div class="team-member">
+					<img src="img/team-01.jpg" class="team-img" alt="" />
+					<div class="member-info">
+						<h4>Ben Affleck</h4>
+						<p>Chief Executive Officer</p>
+						<div class="social">
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-google-plus-g"></i></a>
+							<a href=""><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="team-member">
+					<img src="img/team-02.jpg" class="team-img" alt="" />
+					<div class="member-info">
+						<h4>Christian Bale</h4>
+						<p>Product Manager</p>
+						<div class="social">
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-google-plus-g"></i></a>
+							<a href=""><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="team-member">
+					<img src="img/team-03.jpg" class="team-img" alt="" />
+					<div class="member-info">
+						<h4>Michael Keaton</h4>
+						<p>CTO</p>
+						<div class="social">
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-google-plus-g"></i></a>
+							<a href=""><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="team-member">
+					<img src="img/team-04.jpg" class="team-img" alt="" />
+					<div class="member-info">
+						<h4>Adam West</h4>
+						<p>Accountant</p>
+						<div class="social">
+							<a href=""><i class="fab fa-twitter"></i></a>
+							<a href=""><i class="fab fa-facebook-f"></i></a>
+							<a href=""><i class="fab fa-google-plus-g"></i></a>
+							<a href=""><i class="fab fa-linkedin-in"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Team -->
+
+		<!-- Clients -->
+		<section id="clients">
+			<div class="clients-header">
+				<h2>Our Clients</h2>
+				<p>
+					Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+					accusantium doloremque dere santome nida.
+				</p>
+			</div>
+
+			<ul class="clients-list">
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-1.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-2.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-3.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-4.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-5.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-6.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-7.png" class="clients-img" alt="" />
+					</div>
+				</li>
+
+				<li class="clients-item">
+					<div class="client-logo">
+						<img src="img/clients/client-8.png" class="clients-img" alt="" />
+					</div>
+				</li>
+			</ul>
+		</section>
+		<!-- Clients -->
 </body>
 </html>
+
