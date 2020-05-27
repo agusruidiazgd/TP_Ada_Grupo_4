@@ -1,11 +1,20 @@
-@import "./abstract/variables";
-@import "./abstract/mixins";
-@import "./Sections/about-us";
-@import"./Sections/services";
-@import "./Components/cards";
-
-
 body{
     margin:0;
     padding:0;
 }
+
+//abstract
+@import "./abstract/variables";
+@import "./abstract/mixins";
+
+//sections
+@import "./Sections/header";
+@import "./Sections/hero";
+@import "./Sections/about-us";
+@import"./Sections/services";
+
+
+//components
+@import "./Components/buttons";
+@import "./Components/cards";
+
