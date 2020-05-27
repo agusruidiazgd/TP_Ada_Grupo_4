@@ -1,0 +1,145 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+
+/*EMPIEZAN ESTILOS PORTFOLIO*/
+
+.our-portfolio {
+    @include display-flex (center);
+    padding: $padding-xxxl 0;
+    position: relative;
+    h2 {
+        color: $color-navy-blue-title;
+        font-family: $font-primary;
+        font-size: $font-xxl;
+        font-weight: $font-weight-semi-bold;
+        margin-bottom: $margin-s;
+    }
+    .portfolio-button-container {
+        width: 90vw;
+        @include display-flex (center);
+    }
+    .portfolio-img {
+        @include display-flex (center);
+        border-radius: 10px;
+        box-sizing: border-box;
+        height: 250px;
+        margin: $margin-m 0px;
+        overflow: hidden;
+        position: relative;
+        width: 90vw;
+        img {
+            width: 145%;
+            &.img-translate-3, &.img-translate-5, &.img-translate-6 {
+                position: absolute;
+            }
+            &.img-translate-3 {
+                bottom: -150px;
+                right: -20px;
+            }
+            &.img-translate-5 {
+                bottom: -150px;
+                right: -20px;
+            }
+            &.img-translate-6 {
+                bottom: -145px;
+            }
+        }
+        .portfolio-img-overlay {
+            @include display-flex (center);
+            background-color: rgba(0,66,138,0.5);
+            color: $color-white;
+            flex-direction: column;
+            height: 250px;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            width: 90vw;
+            z-index: 10;
+            h4 {
+                font-family: $font-primary;
+                font-size: $font-m;
+                font-weight: $font-weight-bold-primary;
+                margin: 0;
+                padding-bottom: 4px;
+            }
+            span {
+                font-family: $font-secondary;
+                font-size: $font-xxs;
+            }
+            .portfolio-icon-container {
+                margin-top: $margin-xxs;
+                i {
+                    background-color: $color-blue-medium;
+                    border-radius: 50%;
+                    padding: $padding-s;
+                }
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    #portfolio-modal-1, 
+    #portfolio-modal-2, 
+    #portfolio-modal-3, 
+    #portfolio-modal-4, 
+    #portfolio-modal-5, 
+    #portfolio-modal-6, 
+    #portfolio-modal-7, 
+    #portfolio-modal-8, 
+    #portfolio-modal-9 {
+        background-color: rgba(13, 13, 14, 0.856);
+        display: none;
+        height: 100vh;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        &#portfolio-modal-1:target, 
+        &#portfolio-modal-2:target, 
+        &#portfolio-modal-3:target,
+        &#portfolio-modal-4:target,
+        &#portfolio-modal-5:target,
+        &#portfolio-modal-6:target,
+        &#portfolio-modal-7:target,
+        &#portfolio-modal-8:target,
+        &#portfolio-modal-9:target {
+            @include display-flex (center);
+        }
+    }
+    .target-modal {
+        color: $color-grey-light;
+        font-family: $font-secondary;
+        font-size: $font-xxxs;
+        z-index: 100;
+        .modal-img-container {
+            border: 3px solid $color-white;
+            box-sizing: border-box;
+            height: auto;
+            margin-bottom: $margin-xxxs;
+            position: relative;
+            overflow: hidden;
+            width: 80vw;
+            img {
+                width: 100%;
+            }
+        }
+        figcaption {
+            @include display-flex (space-between);
+            p {
+                margin: 0;
+                &.caption-title {
+                    font-weight: $font-weight-bold-secondary;
+                }
+            }
+            i {
+                align-self: flex-start;
+                font-size: $font-xxxl;
+            }
+        }
+    }   
+}
+
+/*TERMINAN ESTILOS PORTFOLIO*/

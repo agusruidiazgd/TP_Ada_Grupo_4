@@ -1,0 +1,64 @@
+@import '../abstract/variables.scss';
+@import '../abstract/mixins.scss';
+
+#clients {
+	box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+	background: #ecf5ff;
+	box-sizing: border-box;
+	color: $color-grey-dark;
+	font-family: $font-secondary;
+	font-size: 1rem;
+	width: 100%;
+	padding-right: $padding-m;
+	padding-left: $padding-m;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: $padding-xxxl;
+	.clients-header h2 {
+		font-size: $font-xl;
+		color: #283d50;
+		text-align: center;
+		font-weight: 500;
+		font-family: $font-primary;
+		padding: $padding-xxl 0 $padding-xl;
+		margin: 0;
+	}
+	.clients-header p {
+		text-align: center;
+		font-weight: 300;
+		color: #556877;
+		margin: 0;
+		font-size: $font-xs;
+		padding-bottom: $padding-xxxl;
+	}
+	.clients-list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	.clients-item {
+		background-color: $color-white;
+		border: 1px solid #d6eaff;
+		@include breakpoint-tablet-1 {
+			width: 33%;
+			height: 160px;
+		}
+		@include breakpoint-desktop {
+			width: 24.8%;
+			height: 160px;
+		}
+		.client-logo {
+			padding: $padding-xxxl;
+			@include breakpoint-tablet-1 {
+				padding: $padding-xxxl $padding-xxl * 2;
+			}
+			.clients-img {
+				max-width: 100%;
+			}
+		}
+	}
+}

@@ -80,5 +80,39 @@ div.service-card{
             line-height:1.7;
         }
     }
+}
 
+div.about-card{
+    box-sizing: border-box;
+    display: flex;
+    div.about-card-content{
+        display: inline-block;
+        margin-left:$margin-s;
+        h4{
+            margin: 0 0 20px 0;
+            a{
+                font-family: $font-primary;
+                font-weight: $font-weight-bold-primary;
+                text-decoration: none;
+                color: $color-grey-blue;
+            }
+        } 
+        p.description{
+            font-size: $font-xxs;
+            color:$color-grey-dark;
+            line-height: 1.7;
+        }
+    }
+    div.about-icon{
+        display: inline-block;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        border: 2px solid $color-blue-medium;
+        i{
+            font-size: 24px;
+            color:$color-blue-medium;
+            margin: 20px;
+        }
+    }
 }
