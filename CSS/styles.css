@@ -14,7 +14,7 @@ a {
 
 /* FIN ESTILOS ANCHORS WHY CHOOSE US*/
 /* ESTILOS BUTTONS PORTFOLIO*/
-.portfolio-button-container button {
+button {
   border: none;
   border-radius: 23px;
   box-sizing: border-box;
@@ -22,15 +22,15 @@ a {
   font-size: 12px;
   margin: 15px 5px 5px 5px;
   padding: 6px 20px; }
-  .portfolio-button-container button.portfolio-button {
+  button.portfolio-button {
     background-color: #ECF5FF;
     color: #007bfe;
     transition: background-color 0.3s linear; }
-    .portfolio-button-container button.portfolio-button:hover {
+    button.portfolio-button:hover {
       background-color: #007bfe;
       color: #fff;
       outline: none; }
-  .portfolio-button-container button.portfolio-button-selected {
+  button.portfolio-button-selected {
     background-color: #007bfe;
     color: #fff; }
 
@@ -72,7 +72,7 @@ a {
     border-radius: 10px;
     margin: 15px;
     padding: 15px;
-    width: 362px; }
+    width: 90vw; }
     .why-choose-us .why-card:hover {
       background-color: #003b7a; }
     .why-choose-us .why-card i {
@@ -127,6 +127,12 @@ a {
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 20px; }
+  .our-portfolio .portfolio-button-container {
+    width: 90vw;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
   .our-portfolio .portfolio-img {
     align-items: center;
     display: flex;
@@ -137,9 +143,9 @@ a {
     margin: 30px 0px;
     overflow: hidden;
     position: relative;
-    width: 362px; }
+    width: 90vw; }
     .our-portfolio .portfolio-img img {
-      width: 115%; }
+      width: 145%; }
       .our-portfolio .portfolio-img img.img-translate-3, .our-portfolio .portfolio-img img.img-translate-5, .our-portfolio .portfolio-img img.img-translate-6 {
         position: absolute; }
       .our-portfolio .portfolio-img img.img-translate-3 {
@@ -149,9 +155,7 @@ a {
         bottom: -150px;
         right: -20px; }
       .our-portfolio .portfolio-img img.img-translate-6 {
-        bottom: -145px;
-        right: 10px;
-        width: 100% !important; }
+        bottom: -145px; }
     .our-portfolio .portfolio-img .portfolio-img-overlay {
       align-items: center;
       display: flex;
@@ -165,7 +169,7 @@ a {
       opacity: 0;
       position: absolute;
       top: 0;
-      width: 362px;
+      width: 90vw;
       z-index: 10; }
       .our-portfolio .portfolio-img .portfolio-img-overlay h4 {
         font-family: "Montserrat", sans-serif;
@@ -289,7 +293,7 @@ a {
       margin-bottom: 5px;
       position: relative;
       overflow: hidden;
-      width: 330px; }
+      width: 80vw; }
       .our-portfolio .target-modal .modal-img-container img {
         width: 100%; }
     .our-portfolio .target-modal figcaption {
