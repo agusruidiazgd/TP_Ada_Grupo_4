@@ -1,4 +1,563 @@
+body {
+  margin: 0;
+  padding: 0; }
 
+@media (min-width: 320px) {
+  .menu {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  header {
+    position: fixed;
+    width: 100%; }
+    header .container {
+      position: relative;
+      width: 100%; }
+      header .container .aside-nav {
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(19, 39, 57, 0.8); }
+        header .container .aside-nav nav .nav-bg {
+          width: 260px;
+          height: 100vh;
+          padding: 18px 0;
+          background-color: rgba(19, 39, 57, 0.8);
+          overflow-y: auto; }
+          header .container .aside-nav nav .nav-bg ul.parent {
+            padding-left: 5px; }
+          header .container .aside-nav nav .nav-bg ul {
+            font-family: "Open Sans", sans-serif;
+            margin-top: 0;
+            padding: 0;
+            padding-left: 15px; }
+            header .container .aside-nav nav .nav-bg ul li a {
+              position: relative;
+              font-size: 16px;
+              display: block;
+              position: relative;
+              color: #fff;
+              padding: 10px 20px;
+              font-weight: 500;
+              padding-right: 35px; }
+              header .container .aside-nav nav .nav-bg ul li a .dropdown-icon {
+                position: absolute;
+                right: 15px; }
+            header .container .aside-nav nav .nav-bg ul li a.active {
+              color: #74b5fc; }
+          header .container .aside-nav nav .nav-bg ul#dropdown-1 {
+            display: none; }
+          header .container .aside-nav nav .nav-bg ul#dropdown-2 {
+            display: none; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-1:not(:checked) ~ li a label .fa-chevron-up {
+            display: none; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-2:not(:checked) ~ li a label .fa-chevron-up {
+            display: none; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-1:checked ~ li a label .fa-chevron-down {
+            display: none; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-1:checked ~ li#li-1 a {
+            color: #74b5fc; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-2:checked ~ li#li-2 a {
+            color: #74b5fc; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-2:checked ~ li a label .fa-chevron-down {
+            display: none; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-1:checked ~ ul#dropdown-1 {
+            display: block; }
+          header .container .aside-nav nav .nav-bg #input-dropdown-2:checked ~ ul#dropdown-2 {
+            display: block; }
+          header .container .aside-nav nav .nav-bg .close {
+            position: absolute;
+            top: 18px;
+            right: 28px;
+            font-size: 24px;
+            color: white; }
+      header .container .menu {
+        position: absolute; }
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .logo {
+    width: 67px;
+    padding-left: 15px; }
+  img {
+    width: 100%; }
+  .fa-bars {
+    color: #09488d;
+    font-size: 22px;
+    padding-right: 15px; }
+  li {
+    display: inline;
+    list-style: none; }
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px; }
+  .menu-button {
+    border: none;
+    background-color: #fff; }
+  .menu-button label {
+    border: none;
+    display: inline-block;
+    padding: 5px; }
+  #input-menu:checked ~ section.aside-nav {
+    display: block; }
+  #input-menu:checked ~ section.menu button {
+    display: none; }
+  nav a {
+    display: block; }
+  section.aside-nav,
+  .sign-out,
+  #input-menu,
+  #input-dropdown-1,
+  #input-dropdown-2 {
+    display: none; }
+  .container-nav {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%; } }
+
+img {
+  width: 100%; }
+
+.margin-button-1 {
+  margin-bottom: 30px; }
+
+@media (min-width: 320px) {
+  .hero {
+    background-color: #1445b3;
+    padding: 100px 15px 0 15px;
+    text-align: center; }
+    .hero .hero-img {
+      margin: 0 25px 25px 25px;
+      width: 264px; }
+  h2 {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    line-height: 1.2; }
+    h2 .color-blue-light {
+      color: #74b5fc; }
+  .container-button {
+    padding-bottom: 30px; } }
+
+#about-us {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 15px 0 15px; }
+  #about-us h3.about-tittle {
+    font-size: 36px;
+    font-weight: 500;
+    color: #283d50;
+    margin-bottom: 40px;
+    text-align: center; }
+  #about-us p {
+    font-family: "Open Sans", sans-serif; }
+  #about-us h3, #about-us h4 {
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 20px 0; }
+  #about-us p.about-description {
+    font-size: 15px;
+    font-weight: 400;
+    color: #556877;
+    padding-bottom: 60px;
+    margin: 0;
+    text-align: center; }
+  #about-us img {
+    width: 100%; }
+  #about-us p.about-main {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    color: #556877;
+    padding-bottom: 30px;
+    margin: 0; }
+  #about-us .main-about-us {
+    padding: 60px 0 0 0; }
+    #about-us .main-about-us div {
+      padding: 48px 0 0 0; }
+    #about-us .main-about-us h4 {
+      font-size: 24px;
+      color: #444444;
+      font-weight: 600; }
+    #about-us .main-about-us p {
+      color: #444444; }
+
+#service .service-container {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #ecf5ff; }
+  #service .service-container h3, #service .service-container h4 {
+    font-family: "Montserrat", sans-serif; }
+  #service .service-container p {
+    font-family: "Open Sans", sans-serif; }
+  #service .service-container h3.service-tittle {
+    font-size: 36px;
+    font-weight: 500;
+    color: #283d50;
+    margin-bottom: 20px; }
+  #service .service-container p.service-subtittle {
+    font-size: 15px;
+    font-weight: 400;
+    color: #556877;
+    padding-bottom: 60px;
+    margin: 0; }
+
+/*EMPIEZAN ESTILOS WHY CHOOSE US*/
+.why-choose-us {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #014999;
+  color: #fff;
+  padding: 60px 0; }
+  .why-choose-us h2, .why-choose-us h3, .why-choose-us .why-impact-numbers {
+    font-family: "Montserrat", sans-serif; }
+  .why-choose-us h2 {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .why-choose-us h3 {
+    font-size: 22px;
+    font-weight: 600; }
+  .why-choose-us p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    margin-bottom: 30px;
+    text-align: center; }
+  .why-choose-us .why-p {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 60px;
+    width: 90%; }
+  .why-choose-us .why-card {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #004289;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 15px;
+    transition: background-color 0.3s linear;
+    width: 90vw; }
+    @media (min-width: 955px) {
+      .why-choose-us .why-card {
+        width: 690px; } }
+    @media (min-width: 1024px) {
+      .why-choose-us .why-card {
+        height: 317px;
+        width: 258px; } }
+    .why-choose-us .why-card:hover {
+      background-color: #003b7a; }
+    .why-choose-us .why-card i {
+      align-self: center;
+      color: #74b5fc;
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 48px;
+      padding-top: 15px;
+      width: 100%; }
+    .why-choose-us .why-card .why-card-body {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 15px; }
+      @media (min-width: 1024px) {
+        .why-choose-us .why-card .why-card-body {
+          height: 222px; } }
+  .why-choose-us .why-impact-numbers {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 40px; }
+    @media (min-width: 1024px) {
+      .why-choose-us .why-impact-numbers {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 960px; } }
+    .why-choose-us .why-impact-numbers .why-impact-numbers-block {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      flex-direction: column;
+      padding: 20px;
+      width: 35%; }
+      @media (min-width: 1024px) {
+        .why-choose-us .why-impact-numbers .why-impact-numbers-block {
+          width: 200px; } }
+      .why-choose-us .why-impact-numbers .why-impact-numbers-block .impact-number {
+        font-size: 48px;
+        font-weight: 600;
+        margin-bottom: 10px; }
+      .why-choose-us .why-impact-numbers .why-impact-numbers-block .impact-description {
+        font-size: 14px; }
+
+/*TERMINAN ESTILOS WHY CHOOSE US*/
+/*EMPIEZAN ESTILOS PORTFOLIO*/
+.our-portfolio {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px 0;
+  position: relative; }
+  .our-portfolio h2 {
+    color: #283d50;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 20px; }
+  .our-portfolio .portfolio-button-container {
+    width: 90vw;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  @media (min-width: 768px) {
+    .our-portfolio .portfolio-img-container {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }
+  .our-portfolio .portfolio-img {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 250px;
+    margin: 30px 0px;
+    overflow: hidden;
+    position: relative;
+    width: 90vw; }
+    @media (min-width: 768px) {
+      .our-portfolio .portfolio-img {
+        margin: 20px;
+        width: 330px; } }
+    @media (min-width: 1024px) {
+      .our-portfolio .portfolio-img {
+        margin: 15px;
+        width: 280px; } }
+    @media (min-width: 1200px) {
+      .our-portfolio .portfolio-img {
+        width: 350px; } }
+    .our-portfolio .portfolio-img img {
+      width: 145%; }
+      @media (min-width: 768px) {
+        .our-portfolio .portfolio-img img {
+          width: 160%; } }
+      .our-portfolio .portfolio-img img.img-translate-3, .our-portfolio .portfolio-img img.img-translate-5, .our-portfolio .portfolio-img img.img-translate-6 {
+        position: absolute; }
+        @media (min-width: 1024px) {
+          .our-portfolio .portfolio-img img.img-translate-3, .our-portfolio .portfolio-img img.img-translate-5, .our-portfolio .portfolio-img img.img-translate-6 {
+            width: 110%; } }
+      .our-portfolio .portfolio-img img.img-translate-3 {
+        bottom: -150px;
+        right: -20px; }
+      @media (min-width: 1024px) {
+        .our-portfolio .portfolio-img img.img-translate-4 {
+          width: 106%; } }
+      .our-portfolio .portfolio-img img.img-translate-5 {
+        bottom: -150px;
+        right: -20px; }
+      .our-portfolio .portfolio-img img.img-translate-6 {
+        bottom: -145px; }
+    .our-portfolio .portfolio-img .portfolio-img-overlay {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: rgba(0, 66, 138, 0.5);
+      color: #fff;
+      flex-direction: column;
+      height: 250px;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transition: opacity 0.3s linear;
+      width: 90vw;
+      z-index: 10; }
+      @media (min-width: 768px) {
+        .our-portfolio .portfolio-img .portfolio-img-overlay {
+          width: 330px; } }
+      @media (min-width: 1024px) {
+        .our-portfolio .portfolio-img .portfolio-img-overlay {
+          width: 280px; } }
+      @media (min-width: 1200px) {
+        .our-portfolio .portfolio-img .portfolio-img-overlay {
+          width: 350px; } }
+      .our-portfolio .portfolio-img .portfolio-img-overlay h4 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 22px;
+        font-weight: 600;
+        margin: 0;
+        padding-bottom: 4px; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay span {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay .portfolio-icon-container {
+        margin-top: 10px; }
+        .our-portfolio .portfolio-img .portfolio-img-overlay .portfolio-icon-container i {
+          background-color: #007bfe;
+          border-radius: 50%;
+          padding: 10px; }
+      .our-portfolio .portfolio-img .portfolio-img-overlay:hover {
+        opacity: 1; }
+  .our-portfolio #portfolio-modal-1,
+  .our-portfolio #portfolio-modal-2,
+  .our-portfolio #portfolio-modal-3,
+  .our-portfolio #portfolio-modal-4,
+  .our-portfolio #portfolio-modal-5,
+  .our-portfolio #portfolio-modal-6,
+  .our-portfolio #portfolio-modal-7,
+  .our-portfolio #portfolio-modal-8,
+  .our-portfolio #portfolio-modal-9 {
+    background-color: rgba(13, 13, 14, 0.856);
+    display: none;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100vw; }
+    .our-portfolio #portfolio-modal-1#portfolio-modal-1:target, .our-portfolio #portfolio-modal-1#portfolio-modal-2:target, .our-portfolio #portfolio-modal-1#portfolio-modal-3:target, .our-portfolio #portfolio-modal-1#portfolio-modal-4:target, .our-portfolio #portfolio-modal-1#portfolio-modal-5:target, .our-portfolio #portfolio-modal-1#portfolio-modal-6:target, .our-portfolio #portfolio-modal-1#portfolio-modal-7:target, .our-portfolio #portfolio-modal-1#portfolio-modal-8:target, .our-portfolio #portfolio-modal-1#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-2#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-3#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-4#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-5#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-6#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-7#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-8#portfolio-modal-9:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-1:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-2:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-3:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-4:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-5:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-6:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-7:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-8:target,
+    .our-portfolio #portfolio-modal-9#portfolio-modal-9:target {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+  .our-portfolio .target-modal {
+    color: #DDDDDD;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    z-index: 100; }
+    .our-portfolio .target-modal .modal-img-container {
+      border: 3px solid #fff;
+      border-radius: 5px;
+      box-sizing: border-box;
+      height: auto;
+      margin-bottom: 5px;
+      position: relative;
+      overflow: hidden;
+      width: 80vw; }
+      @media (min-width: 768px) {
+        .our-portfolio .target-modal .modal-img-container {
+          max-height: 75vh; } }
+      .our-portfolio .target-modal .modal-img-container img {
+        width: 100%; }
+    .our-portfolio .target-modal figcaption {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .our-portfolio .target-modal figcaption p {
+        margin: 0; }
+        .our-portfolio .target-modal figcaption p.caption-title {
+          font-weight: 700; }
+      .our-portfolio .target-modal figcaption i {
+        align-self: flex-start;
+        font-size: 48px; }
+
+/*TERMINAN ESTILOS PORTFOLIO*/
 #testimonials {
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
   background: #ecf5ff;
@@ -198,469 +757,6 @@ button {
     color: #fff; }
 
 /* FIN ESTILOS BUTTONS PORTFOLIO*/
-/*EMPIEZAN ESTILOS WHY CHOOSE US*/
-.why-choose-us {
-  background-color: #014999;
-  color: #fff;
-  padding: 60px 0; }
-  .why-choose-us h2, .why-choose-us h3, .why-choose-us .why-impact-numbers {
-    font-family: "Montserrat", sans-serif; }
-  .why-choose-us h2 {
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 20px; }
-  .why-choose-us h3 {
-    font-size: 22px;
-    font-weight: 600; }
-  .why-choose-us p {
-    font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    margin-bottom: 30px;
-    text-align: center; }
-  .why-choose-us .why-p {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 60px;
-    width: 90%; }
-  .why-choose-us .why-card {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #004289;
-    border-radius: 10px;
-    margin: 15px;
-    padding: 15px;
-    width: 90vw; }
-    .why-choose-us .why-card:hover {
-      background-color: #003b7a; }
-    .why-choose-us .why-card i {
-      align-self: center;
-      color: #74b5fc;
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      font-size: 48px;
-      padding-top: 15px;
-      width: 100%; }
-    .why-choose-us .why-card .why-card-body {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 15px; }
-  .why-choose-us .why-impact-numbers {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-top: 40px; }
-    .why-choose-us .why-impact-numbers .why-impact-numbers-block {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      flex-direction: column;
-      padding: 20px;
-      width: 35%; }
-      .why-choose-us .why-impact-numbers .why-impact-numbers-block .impact-number {
-        font-size: 48px;
-        font-weight: 600;
-        margin-bottom: 10px; }
-      .why-choose-us .why-impact-numbers .why-impact-numbers-block .impact-description {
-        font-size: 14px; }
-
-/*TERMINAN ESTILOS WHY CHOOSE US*/
-/*EMPIEZAN ESTILOS PORTFOLIO*/
-.our-portfolio {
-  padding: 60px 0;
-  position: relative; }
-  .our-portfolio h2 {
-    color: #283d50;
-    font-family: "Montserrat", sans-serif;
-    font-size: 36px;
-    font-weight: 500;
-    margin-bottom: 20px; }
-  .our-portfolio .portfolio-button-container {
-    width: 90vw;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .our-portfolio .portfolio-img {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border-radius: 10px;
-    box-sizing: border-box;
-    height: 250px;
-    margin: 30px 0px;
-    overflow: hidden;
-    position: relative;
-    width: 90vw; }
-    .our-portfolio .portfolio-img img {
-      width: 145%; }
-      .our-portfolio .portfolio-img img.img-translate-3, .our-portfolio .portfolio-img img.img-translate-5, .our-portfolio .portfolio-img img.img-translate-6 {
-        position: absolute; }
-      .our-portfolio .portfolio-img img.img-translate-3 {
-        bottom: -150px;
-        right: -20px; }
-      .our-portfolio .portfolio-img img.img-translate-5 {
-        bottom: -150px;
-        right: -20px; }
-      .our-portfolio .portfolio-img img.img-translate-6 {
-        bottom: -145px; }
-    .our-portfolio .portfolio-img .portfolio-img-overlay {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      background-color: rgba(0, 66, 138, 0.5);
-      color: #fff;
-      flex-direction: column;
-      height: 250px;
-      left: 0;
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      width: 90vw;
-      z-index: 10; }
-      .our-portfolio .portfolio-img .portfolio-img-overlay h4 {
-        font-family: "Montserrat", sans-serif;
-        font-size: 22px;
-        font-weight: 600;
-        margin: 0;
-        padding-bottom: 4px; }
-      .our-portfolio .portfolio-img .portfolio-img-overlay span {
-        font-family: "Open Sans", sans-serif;
-        font-size: 14px; }
-      .our-portfolio .portfolio-img .portfolio-img-overlay .portfolio-icon-container {
-        margin-top: 10px; }
-        .our-portfolio .portfolio-img .portfolio-img-overlay .portfolio-icon-container i {
-          background-color: #007bfe;
-          border-radius: 50%;
-          padding: 10px; }
-      .our-portfolio .portfolio-img .portfolio-img-overlay:hover {
-        opacity: 1; }
-  .our-portfolio #portfolio-modal-1,
-  .our-portfolio #portfolio-modal-2,
-  .our-portfolio #portfolio-modal-3,
-  .our-portfolio #portfolio-modal-4,
-  .our-portfolio #portfolio-modal-5,
-  .our-portfolio #portfolio-modal-6,
-  .our-portfolio #portfolio-modal-7,
-  .our-portfolio #portfolio-modal-8,
-  .our-portfolio #portfolio-modal-9 {
-    background-color: rgba(13, 13, 14, 0.856);
-    display: none;
-    height: 100vh;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100vw; }
-    .our-portfolio #portfolio-modal-1#portfolio-modal-1:target, .our-portfolio #portfolio-modal-1#portfolio-modal-2:target, .our-portfolio #portfolio-modal-1#portfolio-modal-3:target, .our-portfolio #portfolio-modal-1#portfolio-modal-4:target, .our-portfolio #portfolio-modal-1#portfolio-modal-5:target, .our-portfolio #portfolio-modal-1#portfolio-modal-6:target, .our-portfolio #portfolio-modal-1#portfolio-modal-7:target, .our-portfolio #portfolio-modal-1#portfolio-modal-8:target, .our-portfolio #portfolio-modal-1#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-2#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-3#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-4#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-5#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-6#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-7#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-8#portfolio-modal-9:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-1:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-2:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-3:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-4:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-5:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-6:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-7:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-8:target,
-    .our-portfolio #portfolio-modal-9#portfolio-modal-9:target {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center; }
-  .our-portfolio .target-modal {
-    color: #DDDDDD;
-    font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    z-index: 100; }
-    .our-portfolio .target-modal .modal-img-container {
-      border: 3px solid #fff;
-      box-sizing: border-box;
-      height: auto;
-      margin-bottom: 5px;
-      position: relative;
-      overflow: hidden;
-      width: 80vw; }
-      .our-portfolio .target-modal .modal-img-container img {
-        width: 100%; }
-    .our-portfolio .target-modal figcaption {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between; }
-      .our-portfolio .target-modal figcaption p {
-        margin: 0; }
-        .our-portfolio .target-modal figcaption p.caption-title {
-          font-weight: 700; }
-      .our-portfolio .target-modal figcaption i {
-        align-self: flex-start;
-        font-size: 48px; }
-
-/*TERMINAN ESTILOS PORTFOLIO*/
-  #about-us {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 0 15px 0 15px; }
-  #about-us h3.about-tittle {
-    font-size: 36px;
-    font-weight: 500;
-    color: #283d50;
-    margin-bottom: 40px;
-    text-align: center; }
-  #about-us p {
-    font-family: "Open Sans", sans-serif; }
-  #about-us h3, #about-us h4 {
-    font-family: "Montserrat", sans-serif;
-    margin: 0 0 20px 0; }
-  #about-us p.about-description {
-    font-size: 15px;
-    font-weight: 400;
-    color: #556877;
-    padding-bottom: 60px;
-    margin: 0;
-    text-align: center; }
-  #about-us img {
-    width: 100%; }
-  #about-us p.about-main {
-    box-sizing: border-box;
-    font-size: 16px;
-    font-weight: 400;
-    color: #556877;
-    padding-bottom: 30px;
-    margin: 0; }
-  #about-us .main-about-us {
-    padding: 60px 0 0 0; }
-    #about-us .main-about-us div {
-      padding: 48px 0 0 0; }
-    #about-us .main-about-us h4 {
-      font-size: 24px;
-      color: #444444;
-      font-weight: 600; }
-    #about-us .main-about-us p {
-      color: #444444; }
-
-
-@media (min-width: 320px) {
-  .menu {
-    background-color: #fff;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
-  header {
-    position: fixed;
-    width: 100%; }
-    header .container {
-      position: relative;
-      width: 100%; }
-      header .container .aside-nav {
-        width: 100%;
-        height: 100vh;
-        position: absolute;
-        background-color: rgba(19, 39, 57, 0.8); }
-        header .container .aside-nav nav .nav-bg {
-          width: 260px;
-          height: 100vh;
-          padding: 18px 0;
-          background-color: rgba(19, 39, 57, 0.8);
-          overflow-y: auto; }
-          header .container .aside-nav nav .nav-bg ul.parent {
-            padding-left: 5px; }
-          header .container .aside-nav nav .nav-bg ul {
-            font-family: "Open Sans", sans-serif;
-            margin-top: 0;
-            padding: 0;
-            padding-left: 15px; }
-            header .container .aside-nav nav .nav-bg ul li a {
-              position: relative;
-              font-size: 16px;
-              display: block;
-              position: relative;
-              color: #fff;
-              padding: 10px 20px;
-              font-weight: 500;
-              padding-right: 35px; }
-              header .container .aside-nav nav .nav-bg ul li a .dropdown-icon {
-                position: absolute;
-                right: 15px; }
-            header .container .aside-nav nav .nav-bg ul li a.active {
-              color: #74b5fc; }
-          header .container .aside-nav nav .nav-bg ul#dropdown-1 {
-            display: none; }
-          header .container .aside-nav nav .nav-bg ul#dropdown-2 {
-            display: none; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-1:not(:checked) ~ li a label .fa-chevron-up {
-            display: none; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-2:not(:checked) ~ li a label .fa-chevron-up {
-            display: none; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-1:checked ~ li a label .fa-chevron-down {
-            display: none; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-1:checked ~ li#li-1 a {
-            color: #74b5fc; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-2:checked ~ li#li-2 a {
-            color: #74b5fc; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-2:checked ~ li a label .fa-chevron-down {
-            display: none; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-1:checked ~ ul#dropdown-1 {
-            display: block; }
-          header .container .aside-nav nav .nav-bg #input-dropdown-2:checked ~ ul#dropdown-2 {
-            display: block; }
-          header .container .aside-nav nav .nav-bg .close {
-            position: absolute;
-            top: 18px;
-            right: 28px;
-            font-size: 24px;
-            color: white; }
-      header .container .menu {
-        position: absolute; }
-  .top {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .logo {
-    width: 67px;
-    padding-left: 15px; }
-  img {
-    width: 100%; }
-  .fa-bars {
-    color: #09488d;
-    font-size: 22px;
-    padding-right: 15px; }
-  li {
-    display: inline;
-    list-style: none; }
-  a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px; }
-  .menu-button {
-    border: none;
-    background-color: #fff; }
-  .menu-button label {
-    border: none;
-    display: inline-block;
-    padding: 5px; }
-  #input-menu:checked ~ section.aside-nav {
-    display: block; }
-  #input-menu:checked ~ section.menu button {
-    display: none; }
-  nav a {
-    display: block; }
-  section.aside-nav,
-  .sign-out,
-  #input-menu,
-  #input-dropdown-1,
-  #input-dropdown-2 {
-    display: none; }
-  .container-nav {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%; } }
-
-img {
-  width: 100%; }
-
-.margin-button-1 {
-  margin-bottom: 30px; }
-
-@media (min-width: 320px) {
-  .hero {
-    background-color: #1445b3;
-    padding: 100px 15px 0 15px;
-    text-align: center; }
-    .hero .hero-img {
-      margin: 0 25px 25px 25px;
-      width: 264px; }
-  h2 {
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-size: 34px;
-    font-weight: 700;
-    margin: 0 0 30px 0;
-    line-height: 1.2; }
-    h2 .color-blue-light {
-      color: #74b5fc; }
-  .container-button {
-    padding-bottom: 30px; } }
-
 .button-hero {
   color: #fff;
   font-size: 14px;
@@ -686,7 +782,6 @@ img {
   .button-hero.button-light-blue:hover {
     background-color: transparent;
     border: 2px solid #fff; }
-
 
 #service .service-container {
   align-items: center;
@@ -783,7 +878,6 @@ div.service-card {
       color: #444444;
       line-height: 1.7; }
 
-
 div.about-card {
   box-sizing: border-box;
   display: flex; }
@@ -811,7 +905,3 @@ div.about-card {
       font-size: 24px;
       color: #007bfe;
       margin: 20px; }
-
-body {
-  margin: 0;
-  padding: 0; }

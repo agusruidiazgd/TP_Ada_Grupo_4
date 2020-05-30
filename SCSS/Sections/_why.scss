@@ -39,7 +39,15 @@
         border-radius: 10px;
         margin: $margin-xs;
         padding: $padding-m;
+        transition: background-color 0.3s linear;
         width: 90vw;
+        @include breakpoint-tablet-2 {
+            width: 690px;
+        }
+        @include breakpoint-desktop {
+            height: 317px;
+            width: 258px;
+        }
         &:hover {
             background-color: darken($color: $color-blue-dark, $amount: 3);
         }
@@ -54,17 +62,27 @@
         .why-card-body {
             @include display-flex (center);
             padding: $padding-m;
+            @include breakpoint-desktop {
+                height: 222px;
+            }
         }
     }
     
     .why-impact-numbers {
         @include display-flex (center);
         padding-top: $padding-xxl;
+        @include breakpoint-desktop {
+            @include display-flex (space-between);
+            width: 960px;
+        }
         .why-impact-numbers-block {
             @include display-flex (center);
             flex-direction: column;
             padding: $padding-l;
             width: 35%;
+            @include breakpoint-desktop {
+                width: 200px;
+            }
             .impact-number {
                 font-size: $font-xxxl;
                 font-weight: $font-weight-bold-primary;
