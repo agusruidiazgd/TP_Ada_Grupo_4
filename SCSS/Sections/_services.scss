@@ -16,9 +16,21 @@
         }
         h3.service-tittle{
             @include main-tittle ($margin-s);
+            @include breakpoint-tablet-1{
+                width: 100%;
+            }
         }
         p.service-subtittle{
             @include sub-tittle(0,$padding-xxxl);
+            @include breakpoint-tablet-1{
+                padding: 0 80px 60px 80px;
+                width: 50%;
+                margin: auto;
+            }
+
+            @include breakpoint-desktop-2{
+                padding: 0 120px 60px 120px;
+            }
             
         }
         
