@@ -17,6 +17,8 @@ div.service-card{
         width:250px;
         padding: $margin-m;
         margin: 0 $margin-xs $margin-l $margin-xs;
+        transition: all 0.3s ease-in-out;
+        
     }
 
     @include breakpoint-tablet-2{
@@ -28,6 +30,17 @@ div.service-card{
         width:365px;
     }
 
+    @include breakpoint-desktop {
+        &:hover{
+            transform: translateY(-5px);
+            div.card-content{
+                h4{
+                    color: $color-blue-medium;
+                }
+            }
+        }
+    }
+    
     div.icon{
         display: inline-block;
         vertical-align: middle;
@@ -72,6 +85,7 @@ div.service-card{
             font-weight: $font-weight-bold-primary;
             font-size:$font-s2;
             margin:0 0 $margin-xs $margin-l;
+            transition: 0.5s;
         }
         p.description{
             margin:0 0 0 $margin-l;
