@@ -34,6 +34,12 @@
     }
 }
 
+@mixin breakpoint-mobile-3 {
+    @media (min-width: 578px) {
+        @content;
+    }
+} 
+
 @mixin breakpoint-tablet-1 {
     @media (min-width: 768px) {
         @content;

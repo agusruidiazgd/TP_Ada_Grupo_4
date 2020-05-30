@@ -4,10 +4,26 @@
 #about-us{
     @include display-flex (center);
     box-sizing: border-box;
-    padding: 0 $padding-m 0 $padding-m;
+    padding: 0 $padding-m ;
+    margin: auto;
+    @include breakpoint-mobile-3{
+        padding: 0;
+        width: 510px;
+    }
+    @include breakpoint-tablet-1{
+        width: 690px;
+    }
+    @include breakpoint-desktop{
+        width: 900px;
+        display: flex;
+    }
     h3.about-tittle{
         @include main-tittle ($margin-l);
         text-align: center;
+        @include breakpoint-desktop{
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
     p{
         font-family: $font-secondary;
@@ -15,13 +31,25 @@
     h3,h4{
         font-family: $font-primary;
         margin: 0 0 $margin-s 0;
+        @include breakpoint-desktop{
+            width:50%; 
+        }
     }
     p.about-description{
         @include sub-tittle (0,$padding-xxxl);
         text-align: center;
+        @include breakpoint-desktop{
+            width:465px;
+            margin:auto;
+        }
     }
     img{
         width: 100%;
+        @include breakpoint-desktop{
+            width:50%; 
+            
+        }
+        
     }
     p.about-main{
         box-sizing: border-box;
@@ -30,21 +58,65 @@
         color: $color-grey-light-blue;
         padding-bottom: $padding-xl;
         margin:0;
+        @include breakpoint-desktop{
+            width:50%; 
+        }
     }
     
     .main-about-us{
         padding: $padding-xxxl 0 0 0;
-        div{
+        padding: 48px 0 0 0;
+            @include breakpoint-desktop{
+                width:900px; 
+                display: flex;
+            }
+        div.main-description-2{
             padding: 48px 0 0 0;
+            
         }
-        h4{
+        h4.about-tittle-2{
             font-size: $font-l;
             color:$color-grey-dark;
             font-weight: $font-weight-bold-primary;
+            @include breakpoint-desktop{
+                width:100%;
+            }
         }
-        p{
+        p.about-description-2{
             color:$color-grey-dark;
         }
+        @include breakpoint-desktop{
+            width:100%;
+            img.orden-2{
+                order: 2;
+            }
+        }
+        
+        
     }
+    .div-box-about-1{
+        @include breakpoint-desktop{
+            display: flex;
+            p.about-main{
+                width: 100%!important;
+                color:$color-grey-dark;
+                //width: 50%;
+            }
+            img.orden-2{
+                order: 2;
+            }
+        }
+        
+        .div-box-about{
+            .container-about{
+                @include breakpoint-desktop{
+                    //width:50%;
+                    margin: 0!important;
+                }
+            }
+        }
+    }
+    
+    
     
 }

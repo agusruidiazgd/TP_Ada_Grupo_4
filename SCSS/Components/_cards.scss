@@ -67,19 +67,25 @@ div.service-card{
 div.about-card{
     box-sizing: border-box;
     display: flex;
+    margin-bottom: 20px;
     div.about-card-content{
         display: inline-block;
         margin-left:$margin-s;
         h4{
-            margin: 0 0 20px 0;
+            margin: 0 0 5px 0 !important;
             a{
                 font-family: $font-primary;
                 font-weight: $font-weight-bold-primary;
                 text-decoration: none;
                 color: $color-grey-blue;
+                font-size: $font-s2 !important;
+                @include breakpoint-desktop{
+                    cursor: pointer;
+                }
             }
         } 
         p.description{
+            margin-top: 0;
             font-size: $font-xxs;
             color:$color-grey-dark;
             line-height: 1.7;
@@ -91,10 +97,27 @@ div.about-card{
         height: 64px;
         border-radius: 50%;
         border: 2px solid $color-blue-medium;
+        transition: all 0.3s ease-in-out;
+        @include breakpoint-desktop{
+            &:hover{
+                background-color:$color-blue-medium;
+                i{
+                    color:$color-white;
+                }
+            }
+            
+        }
         i{
             font-size: 24px;
             color:$color-blue-medium;
             margin: 20px;
+            transition: all 0.3s ease-in-out;
+            /*@include breakpoint-desktop{
+                &:hover{
+                    color:$color-white;
+                }
+                
+            }*/
         }
     }
 }
