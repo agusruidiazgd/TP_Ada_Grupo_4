@@ -809,8 +809,8 @@ a {
   width: 25px;
   color: #fff;
   position: fixed;
-  top: 92vh;
-  left: 96vw;
+  bottom: 15px;
+  right: 15px;
   padding: 8px;
   z-index: 50; }
   .navigation-arrow-container .fas.fa-angle-up {
