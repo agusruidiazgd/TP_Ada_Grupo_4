@@ -157,18 +157,37 @@ img {
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
-  padding: 0 15px 0 15px; }
+  padding: 0 15px;
+  margin: auto; }
+  @media (min-width: 578px) {
+    #about-us {
+      padding: 0;
+      width: 510px; } }
+  @media (min-width: 768px) {
+    #about-us {
+      width: 690px; } }
+  @media (min-width: 1024px) {
+    #about-us {
+      width: 900px;
+      display: flex; } }
   #about-us h3.about-tittle {
     font-size: 36px;
     font-weight: 500;
     color: #283d50;
     margin-bottom: 40px;
     text-align: center; }
+    @media (min-width: 1024px) {
+      #about-us h3.about-tittle {
+        width: 100%;
+        margin-bottom: 20px; } }
   #about-us p {
     font-family: "Open Sans", sans-serif; }
   #about-us h3, #about-us h4 {
     font-family: "Montserrat", sans-serif;
     margin: 0 0 20px 0; }
+    @media (min-width: 1024px) {
+      #about-us h3, #about-us h4 {
+        width: 50%; } }
   #about-us p.about-description {
     font-size: 15px;
     font-weight: 400;
@@ -176,8 +195,15 @@ img {
     padding-bottom: 60px;
     margin: 0;
     text-align: center; }
+    @media (min-width: 1024px) {
+      #about-us p.about-description {
+        width: 465px;
+        margin: auto; } }
   #about-us img {
     width: 100%; }
+    @media (min-width: 1024px) {
+      #about-us img {
+        width: 50%; } }
   #about-us p.about-main {
     box-sizing: border-box;
     font-size: 16px;
@@ -185,16 +211,43 @@ img {
     color: #556877;
     padding-bottom: 30px;
     margin: 0; }
+    @media (min-width: 1024px) {
+      #about-us p.about-main {
+        width: 50%; } }
   #about-us .main-about-us {
-    padding: 60px 0 0 0; }
-    #about-us .main-about-us div {
+    padding: 60px 0 0 0;
+    padding: 48px 0 0 0; }
+    @media (min-width: 1024px) {
+      #about-us .main-about-us {
+        width: 900px;
+        display: flex; } }
+    #about-us .main-about-us div.main-description-2 {
       padding: 48px 0 0 0; }
-    #about-us .main-about-us h4 {
+    #about-us .main-about-us h4.about-tittle-2 {
       font-size: 24px;
       color: #444444;
       font-weight: 600; }
-    #about-us .main-about-us p {
+      @media (min-width: 1024px) {
+        #about-us .main-about-us h4.about-tittle-2 {
+          width: 100%; } }
+    #about-us .main-about-us p.about-description-2 {
       color: #444444; }
+    @media (min-width: 1024px) {
+      #about-us .main-about-us {
+        width: 100%; }
+        #about-us .main-about-us img.orden-2 {
+          order: 2; } }
+  @media (min-width: 1024px) {
+    #about-us .div-box-about-1 {
+      display: flex; }
+      #about-us .div-box-about-1 p.about-main {
+        width: 100% !important;
+        color: #444444; }
+      #about-us .div-box-about-1 img.orden-2 {
+        order: 2; } }
+  @media (min-width: 1024px) {
+    #about-us .div-box-about-1 .div-box-about .container-about {
+      margin: 0 !important; } }
 
 #service .service-container {
   align-items: center;
@@ -880,18 +933,24 @@ div.service-card {
 
 div.about-card {
   box-sizing: border-box;
-  display: flex; }
+  display: flex;
+  margin-bottom: 20px; }
   div.about-card div.about-card-content {
     display: inline-block;
     margin-left: 20px; }
     div.about-card div.about-card-content h4 {
-      margin: 0 0 20px 0; }
+      margin: 0 0 5px 0 !important; }
       div.about-card div.about-card-content h4 a {
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         text-decoration: none;
-        color: #283d50; }
+        color: #283d50;
+        font-size: 18px !important; }
+        @media (min-width: 1024px) {
+          div.about-card div.about-card-content h4 a {
+            cursor: pointer; } }
     div.about-card div.about-card-content p.description {
+      margin-top: 0;
       font-size: 14px;
       color: #444444;
       line-height: 1.7; }
@@ -900,8 +959,25 @@ div.about-card {
     width: 64px;
     height: 64px;
     border-radius: 50%;
-    border: 2px solid #007bfe; }
+    border: 2px solid #007bfe;
+    transition: all 0.3s ease-in-out; }
+    @media (min-width: 1024px) {
+      div.about-card div.about-icon:hover {
+        background-color: #007bfe; }
+        div.about-card div.about-icon:hover i {
+          color: #fff; } }
     div.about-card div.about-icon i {
       font-size: 24px;
       color: #007bfe;
-      margin: 20px; }
+      margin: 20px;
+      transition: all 0.3s ease-in-out;
+      /*@include breakpoint-desktop{
+                &:hover{
+                    color:$color-white;
+                }
+                
+            }*/ }
+
+body {
+  margin: 0;
+  padding: 0; }
