@@ -1,6 +1,28 @@
 @import "../abstract/variables";
 @import '../abstract/mixins';
 
+/*ESTILOS FLECHA FIXED PARA VOLVER AL INICIO*/
+.navigation-arrow-container {
+    text-align: center;
+    background-color: $color-blue-medium;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    color: $color-white;
+    position: fixed;
+    top: 92vh;
+    left: 96vw;
+    padding: $padding-xs;
+    z-index: 50;
+    .fas {
+        &.fa-angle-up{
+            font-size: 23px;
+        }
+    }
+}
+
+/*FIN ESTILOS FLECHA FIXED PARA VOLVER AL INICIO*/
+
 /* ESTILOS BUTTONS PORTFOLIO*/
 button {
     border: none;

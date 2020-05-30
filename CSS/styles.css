@@ -267,12 +267,23 @@ img {
     font-weight: 500;
     color: #283d50;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #service .service-container h3.service-tittle {
+        width: 100%; } }
   #service .service-container p.service-subtittle {
     font-size: 15px;
     font-weight: 400;
     color: #556877;
     padding-bottom: 60px;
     margin: 0; }
+    @media (min-width: 768px) {
+      #service .service-container p.service-subtittle {
+        padding: 0 80px 60px 80px;
+        width: 50%;
+        margin: auto; } }
+    @media (min-width: 1200px) {
+      #service .service-container p.service-subtittle {
+        padding: 0 120px 60px 120px; } }
 
 /*EMPIEZAN ESTILOS WHY CHOOSE US*/
 .why-choose-us {
@@ -498,7 +509,7 @@ img {
     display: none;
     height: 100vh;
     left: 0;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100vw; }
     .our-portfolio #portfolio-modal-1#portfolio-modal-1:target, .our-portfolio #portfolio-modal-1#portfolio-modal-2:target, .our-portfolio #portfolio-modal-1#portfolio-modal-3:target, .our-portfolio #portfolio-modal-1#portfolio-modal-4:target, .our-portfolio #portfolio-modal-1#portfolio-modal-5:target, .our-portfolio #portfolio-modal-1#portfolio-modal-6:target, .our-portfolio #portfolio-modal-1#portfolio-modal-7:target, .our-portfolio #portfolio-modal-1#portfolio-modal-8:target, .our-portfolio #portfolio-modal-1#portfolio-modal-9:target,
@@ -788,6 +799,23 @@ a {
     color: #fff; }
 
 /* FIN ESTILOS ANCHORS WHY CHOOSE US*/
+/*ESTILOS FLECHA FIXED PARA VOLVER AL INICIO*/
+.navigation-arrow-container {
+  text-align: center;
+  background-color: #007bfe;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  color: #fff;
+  position: fixed;
+  top: 92vh;
+  left: 96vw;
+  padding: 8px;
+  z-index: 50; }
+  .navigation-arrow-container .fas.fa-angle-up {
+    font-size: 23px; }
+
+/*FIN ESTILOS FLECHA FIXED PARA VOLVER AL INICIO*/
 /* ESTILOS BUTTONS PORTFOLIO*/
 button {
   border: none;
@@ -835,42 +863,6 @@ button {
   .button-hero.button-light-blue:hover {
     background-color: transparent;
     border: 2px solid #fff; }
-
-#service .service-container {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
-  background-color: #ecf5ff; }
-  #service .service-container h3, #service .service-container h4 {
-    font-family: "Montserrat", sans-serif; }
-  #service .service-container p {
-    font-family: "Open Sans", sans-serif; }
-  #service .service-container h3.service-tittle {
-    font-size: 36px;
-    font-weight: 500;
-    color: #283d50;
-    margin-bottom: 20px; }
-    @media (min-width: 768px) {
-      #service .service-container h3.service-tittle {
-        width: 100%; } }
-  #service .service-container p.service-subtittle {
-    font-size: 15px;
-    font-weight: 400;
-    color: #556877;
-    padding-bottom: 60px;
-    margin: 0; }
-    @media (min-width: 768px) {
-      #service .service-container p.service-subtittle {
-        padding: 0 80px 60px 80px;
-        width: 50%;
-        margin: auto; } }
-    @media (min-width: 1200px) {
-      #service .service-container p.service-subtittle {
-        padding: 0 120px 60px 120px; } }
 
 div.service-card {
   display: flex;
@@ -984,7 +976,3 @@ div.about-card {
                 }
                 
             }*/ }
-
-body {
-  margin: 0;
-  padding: 0; }
