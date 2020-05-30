@@ -50,6 +50,7 @@ div.service-card{
         }
         i{
             font-size: 64px; 
+            font-weight: light;
         }
         i.fab{
             &.fa-stumbleupon-circle{
@@ -100,6 +101,17 @@ div.about-card{
     box-sizing: border-box;
     display: flex;
     margin-bottom: 20px;
+    @include breakpoint-desktop {
+        &:hover{
+            div.about-icon{
+                background-color:$color-blue-medium;
+                i{
+                    color:$color-white;
+                }
+            }
+        }
+         
+    }
     div.about-card-content{
         display: inline-block;
         margin-left:$margin-s;
@@ -130,7 +142,7 @@ div.about-card{
         border-radius: 50%;
         border: 2px solid $color-blue-medium;
         transition: all 0.3s ease-in-out;
-        @include breakpoint-desktop{
+        /*@include breakpoint-desktop{
             &:hover{
                 background-color:$color-blue-medium;
                 i{
@@ -138,7 +150,7 @@ div.about-card{
                 }
             }
             
-        }
+        }*/
         i{
             font-size: 24px;
             color:$color-blue-medium;

@@ -175,11 +175,11 @@ img {
     font-weight: 500;
     color: #283d50;
     margin-bottom: 40px;
-    text-align: center; }
+    text-align: center;
+    margin: 60px 0 20px 0; }
     @media (min-width: 1024px) {
       #about-us h3.about-tittle {
-        width: 100%;
-        margin-bottom: 20px; } }
+        width: 100%; } }
   #about-us p {
     font-family: "Open Sans", sans-serif; }
   #about-us h3, #about-us h4 {
@@ -203,7 +203,8 @@ img {
     width: 100%; }
     @media (min-width: 1024px) {
       #about-us img {
-        width: 50%; } }
+        width: 50%;
+        margin: 0 15px 0 15px; } }
   #about-us p.about-main {
     box-sizing: border-box;
     font-size: 16px;
@@ -267,12 +268,23 @@ img {
     font-weight: 500;
     color: #283d50;
     margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      #service .service-container h3.service-tittle {
+        width: 100%; } }
   #service .service-container p.service-subtittle {
     font-size: 15px;
     font-weight: 400;
     color: #556877;
     padding-bottom: 60px;
     margin: 0; }
+    @media (min-width: 768px) {
+      #service .service-container p.service-subtittle {
+        padding: 0 80px 60px 80px;
+        width: 50%;
+        margin: auto; } }
+    @media (min-width: 1200px) {
+      #service .service-container p.service-subtittle {
+        padding: 0 120px 60px 120px; } }
 
 /*EMPIEZAN ESTILOS WHY CHOOSE US*/
 .why-choose-us {
@@ -836,42 +848,6 @@ button {
     background-color: transparent;
     border: 2px solid #fff; }
 
-#service .service-container {
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  padding-right: 15px;
-  padding-left: 15px;
-  background-color: #ecf5ff; }
-  #service .service-container h3, #service .service-container h4 {
-    font-family: "Montserrat", sans-serif; }
-  #service .service-container p {
-    font-family: "Open Sans", sans-serif; }
-  #service .service-container h3.service-tittle {
-    font-size: 36px;
-    font-weight: 500;
-    color: #283d50;
-    margin-bottom: 20px; }
-    @media (min-width: 768px) {
-      #service .service-container h3.service-tittle {
-        width: 100%; } }
-  #service .service-container p.service-subtittle {
-    font-size: 15px;
-    font-weight: 400;
-    color: #556877;
-    padding-bottom: 60px;
-    margin: 0; }
-    @media (min-width: 768px) {
-      #service .service-container p.service-subtittle {
-        padding: 0 80px 60px 80px;
-        width: 50%;
-        margin: auto; } }
-    @media (min-width: 1200px) {
-      #service .service-container p.service-subtittle {
-        padding: 0 120px 60px 120px; } }
-
 div.service-card {
   display: flex;
   align-items: center;
@@ -910,7 +886,8 @@ div.service-card {
       div.service-card div.icon {
         margin-left: -45px; } }
     div.service-card div.icon i {
-      font-size: 64px; }
+      font-size: 64px;
+      font-weight: light; }
     div.service-card div.icon i.fab.fa-stumbleupon-circle {
       color: #ff689b; }
     div.service-card div.icon i.fas.fa-book {
@@ -942,6 +919,11 @@ div.about-card {
   box-sizing: border-box;
   display: flex;
   margin-bottom: 20px; }
+  @media (min-width: 1024px) {
+    div.about-card:hover div.about-icon {
+      background-color: #007bfe; }
+      div.about-card:hover div.about-icon i {
+        color: #fff; } }
   div.about-card div.about-card-content {
     display: inline-block;
     margin-left: 20px; }
@@ -967,12 +949,16 @@ div.about-card {
     height: 64px;
     border-radius: 50%;
     border: 2px solid #007bfe;
-    transition: all 0.3s ease-in-out; }
-    @media (min-width: 1024px) {
-      div.about-card div.about-icon:hover {
-        background-color: #007bfe; }
-        div.about-card div.about-icon:hover i {
-          color: #fff; } }
+    transition: all 0.3s ease-in-out;
+    /*@include breakpoint-desktop{
+            &:hover{
+                background-color:$color-blue-medium;
+                i{
+                    color:$color-white;
+                }
+            }
+            
+        }*/ }
     div.about-card div.about-icon i {
       font-size: 24px;
       color: #007bfe;
@@ -984,7 +970,3 @@ div.about-card {
                 }
                 
             }*/ }
-
-body {
-  margin: 0;
-  padding: 0; }
