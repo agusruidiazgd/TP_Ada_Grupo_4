@@ -12,10 +12,29 @@ div.service-card{
     overflow: hidden;
     box-sizing: border-box;
     margin: 0 $margin-xxs $margin-l $margin-xxs;
+    @include breakpoint-tablet-1{
+        box-sizing: content-box;
+        width:250px;
+        padding: $margin-m;
+        margin: 0 $margin-xs $margin-l $margin-xs;
+    }
+
+    @include breakpoint-tablet-2{
+        width:290px;
+        margin: 0 25px $margin-l 25px;
+    }
+
+    @include breakpoint-desktop-2{
+        width:365px;
+    }
+
     div.icon{
         display: inline-block;
         vertical-align: middle;
         margin-left: -50px;
+        @include breakpoint-tablet-1{
+            margin-left: -45px;
+        }
         i{
             font-size: 64px; 
         }
@@ -61,7 +80,6 @@ div.service-card{
             line-height:1.7;
         }
     }
-    
 }
 
 div.about-card{
