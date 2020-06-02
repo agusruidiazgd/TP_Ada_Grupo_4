@@ -1,46 +1,70 @@
-@import '../abstract/mixins';
-@import '../abstract/variables';
+@import "../abstract/mixins";
+@import "../abstract/variables";
 
 img {
-    width: 100%;
+  width: 100%;
 }
-
 .margin-button-1 {
-    margin-bottom: $margin-m;
+  margin-bottom: $margin-m;
 }
 
+#hero {
+  background-color: $color-blue-medium-dark;
+  padding: 100px $margin-xs 0 $margin-xs;
+  text-align:center;
+  @include breakpoint-desktop {
+    text-align: left;
+  }
 
-@include breakpoint-mobile-1 {
-    .hero {
-        background-color: $color-blue-medium-dark;
-        padding: 100px $margin-xs 0 $margin-xs;
-        text-align: center;
-
-
-        .hero-img {
-            margin: 0 25px 25px 25px;
-            width: 264px;
-        }
-
+  .container-hero {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint-desktop {
+      width: 100%;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
+      padding: 70px 0 100px 0;
     }
-
-    h2 {
-        color: $color-white;
-        font-family: $font-primary;
-        font-size: $font-xl;
-        font-weight: $font-weight-bold-secondary;
-        margin: 0 0 30px 0;
-        line-height: 1.2;
-        .color-blue-light {
-            color: $color-blue-light;
-        }
-        
+  }
+  .hero-img {
+    margin: 0 25px 25px 25px;
+    width: 80%;
+    @include breakpoint-mobile-3 {
+      margin-top: 35px;
     }
-    
- .container-button{
-     padding-bottom:$padding-xl;
- }   
+    @include breakpoint-tablet-2 {
+      width: 552px;
+    }
+    @include breakpoint-desktop {
+      margin-top: 0;
+      height: 263.13px;
+      width: 465px;
+    }
+    @include breakpoint-desktop-2 {
+      height: 314px;
+      width: 555px;
+    }
+  }
+}
 
-   
+h2 {
+  color: $color-white;
+  font-family: $font-primary;
+  font-size: $font-xl;
+  font-weight: $font-weight-bold-secondary;
+  margin: 0 0 30px 0;
+  line-height: 1.2;
+  @include breakpoint-tablet-1 {
+    font-size: $font-xxxl;
+  }
 
+  .color-blue-light {
+    color: $color-blue-light;
+  }
+}
+.container-button {
+  padding-bottom: $padding-xl;
 }
