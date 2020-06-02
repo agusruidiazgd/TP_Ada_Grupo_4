@@ -7,19 +7,17 @@
 	box-sizing: border-box;
 	color: $color-grey-dark;
 	font-family: $font-secondary;
-	font-size: 1rem;
+	font-size: $font-s;
 	width: 100%;
-	padding-right: $padding-m;
-	padding-left: $padding-m;
 	margin-right: auto;
 	margin-left: auto;
-	padding-bottom: $padding-xxxl;
+	padding: $padding-xxxl $padding-m;
 
 	.testimonials-header h2 {
 		font-size: $font-xl;
 		color: #283d50;
 		text-align: center;
-		font-weight: 500;
+		font-weight: $font-weight-semi-bold;
 		font-family: $font-primary;
 		padding: $padding-xxl 0;
 		margin: 0;
@@ -50,7 +48,7 @@
 		text-align: center;
 		@include breakpoint-tablet-1 {
 			text-align: left;
-			margin-left: 15px;
+			margin-left: $margin-xs;
 		}
 	}
 	.testimonial-content h3 {
@@ -62,7 +60,7 @@
 		color: #999;
 		font-size: $font-s;
 		margin: 0;
-		font-weight: 400;
+		font-weight: $font-weight-regular;
 	}
 	.testimonial-content p {
 		font-style: italic;
