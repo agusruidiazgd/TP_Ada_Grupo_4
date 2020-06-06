@@ -778,13 +778,11 @@ h2 {
   box-sizing: border-box;
   color: #444444;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 60px; }
+  padding: 60px 15px; }
   #testimonials .testimonials-header h2 {
     font-size: 34px;
     color: #283d50;
@@ -834,7 +832,7 @@ h2 {
   box-sizing: border-box;
   color: #444444;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -864,7 +862,8 @@ h2 {
   #team .team-member {
     padding-bottom: 15px;
     width: 300px;
-    height: 300px; }
+    height: 300px;
+    position: relative; }
     @media (min-width: 768px) {
       #team .team-member {
         margin: 15px; } }
@@ -876,8 +875,53 @@ h2 {
   #team .team-img {
     border-radius: 50%;
     max-width: 100%; }
-  #team .member-info {
-    display: none; }
+  #team .team-img-overlay {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 62, 128, 0.7);
+    color: #fff;
+    border-radius: 50%;
+    max-width: 100%;
+    width: 300px;
+    height: 290px;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+    z-index: 999;
+    cursor: pointer;
+    top: 0;
+    position: absolute; }
+    #team .team-img-overlay:hover {
+      opacity: 1; }
+    @media (min-width: 768px) {
+      #team .team-img-overlay {
+        height: 300px; } }
+    @media (min-width: 1024px) {
+      #team .team-img-overlay {
+        width: 250px;
+        height: 250px; } }
+    #team .team-img-overlay .member-info {
+      width: 100%;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #team .team-img-overlay .member-info .fab {
+        color: #fff;
+        font-size: 16px; }
+      #team .team-img-overlay .member-info h4 {
+        font-weight: 700;
+        margin-bottom: 0px;
+        font-size: 18px;
+        color: #fff; }
+      #team .team-img-overlay .member-info p {
+        font-style: italic;
+        display: block;
+        font-size: 13px;
+        color: #fff;
+        margin-top: 5px; }
+      #team .team-img-overlay .member-info .social a {
+        padding: 5px; }
 
 #clients {
   box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -885,7 +929,7 @@ h2 {
   box-sizing: border-box;
   color: #444444;
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 16px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -928,11 +972,14 @@ h2 {
         height: 160px; } }
     #clients .clients-item .client-logo {
       padding: 60px; }
+      #clients .clients-item .client-logo:hover {
+        transition-duration: 0.5s;
+        transform: scale(1.2); }
       @media (min-width: 768px) {
         #clients .clients-item .client-logo {
-          padding: 60px 80px; } }
-      #clients .clients-item .client-logo .clients-img {
-        max-width: 100%; }
+          padding: 60px 80px; }
+          #clients .clients-item .client-logo .clients-img {
+            max-width: 100%; } }
 
 a {
   color: inherit;

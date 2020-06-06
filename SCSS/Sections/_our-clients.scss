@@ -7,7 +7,7 @@
 	box-sizing: border-box;
 	color: $color-grey-dark;
 	font-family: $font-secondary;
-	font-size: 1rem;
+	font-size: $font-s;
 	width: 100%;
 	padding-right: $padding-m;
 	padding-left: $padding-m;
@@ -18,14 +18,14 @@
 		font-size: $font-xl;
 		color: #283d50;
 		text-align: center;
-		font-weight: 500;
+		font-weight: $font-weight-semi-bold;
 		font-family: $font-primary;
 		padding: $padding-xxl 0 $padding-xl;
 		margin: 0;
 	}
 	.clients-header p {
 		text-align: center;
-		font-weight: 300;
+		font-weight: $font-weight-light;
 		color: #556877;
 		margin: 0;
 		font-size: $font-xs;
@@ -53,11 +53,16 @@
 		}
 		.client-logo {
 			padding: $padding-xxxl;
+			&:hover {
+				transition-duration: 0.5s;
+				transform: scale(1.2);
+			}
 			@include breakpoint-tablet-1 {
 				padding: $padding-xxxl $padding-xxl * 2;
-			}
-			.clients-img {
-				max-width: 100%;
+
+				.clients-img {
+					max-width: 100%;
+				}
 			}
 		}
 	}
