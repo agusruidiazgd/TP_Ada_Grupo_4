@@ -1,38 +1,39 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wayne Enterprises</title>
-    <link rel="icon" type="image/png" href="img/batman-icon.png" sizes="64x64">
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/batman-icon.png"
+      sizes="64x64"
+    />
     <script
       src="https://kit.fontawesome.com/b6a4b85d75.js"
-      crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+      crossorigin="anonymous"
+    ></script>
     <link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-			integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
-			crossorigin="anonymous"
-		/>
-    <link rel="stylesheet" href="./CSS/styles.css">
-</head>
-<body>
-    <div class="top" #top></div>
-    <header>
-      <div class="container">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+  </head>
+  <body>
+    <section id="header">
+      <div class="top" #top></div>
+      <header>
         <input type="checkbox" id="input-menu" />
-        <section class="menu">
-          <div class="logo">
-            <a href="#top"><img src="img/logo-tp.png" alt="logo" /></a>
-          </div>
-          <button class="menu-button">
-            <label for="input-menu">
-              <i class="fas fa-bars"></i>
-            </label>
-          </button>
-        </section>
         <section class="aside-nav">
           <nav>
             <div class="nav-bg">
@@ -40,588 +41,705 @@
                 <i class="fas fa-times"></i>
               </label>
               <ul class="parent">
-                <input type="checkbox" id="input-dropdown-1">
-                <li><a class="active" href=" #">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Team</a></li>
+                <input type="checkbox" id="input-dropdown-1" />
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#porfolio">Portfolio</a></li>
+                <li><a href="#team">Team</a></li>
                 <li id="li-1">
                   <a href="#">
-                    Drop Down 
+                    Drop Down
                     <label class="dropdown-icon" for="input-dropdown-1">
                       <i class="fas fa-chevron-down"></i>
                       <i class="fas fa-chevron-up"></i>
                     </label>
                   </a>
-                  
-                </li> 
-                
-                  <ul id="dropdown-1">
-                    <input type="checkbox" id="input-dropdown-2">
-                    <li><a href="#">Drop Down 1</a></li>
-                    <li id="li-2">
-                      <a href="#">Drop Down 2 
-                       <label class="dropdown-icon" for="input-dropdown-2">
-                      <i class="fas fa-chevron-down"></i>
-                      <i class="fas fa-chevron-up"></i>
-                    </label>
-                  </a> 
-                  </li>
-                    <ul id="dropdown-2">
-                      <li><a href="#">Drop Down 1</a></li>
-                      <li><a href="#">Drop Down 2</a></li>
-                      <li><a href="#">Drop Down 3</a></li>
-                      <li><a href="#">Drop Down 4</a></li>
-                      <li><a href="#">Drop Down 5</a></li>
-                    </ul>
-                  </ul>
                 </li>
-                <li><a href="#">Conntact Us</a></li>
+                <ul id="dropdown-1">
+                  <input type="checkbox" id="input-dropdown-2" />
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li id="li-2">
+                    <a href="#"
+                      >Drop Down 2
+                      <label class="dropdown-icon" for="input-dropdown-2">
+                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-up"></i>
+                      </label>
+                    </a>
+                  </li>
+                  <ul id="dropdown-2">
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li><a href="#">Drop Down 2</a></li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                  </ul>
+                </ul>
+                <li><a href="#contact-us">Contact Us</a></li>
               </ul>
             </div>
           </nav>
         </section>
+        <div class="container">
+          <section class="menu">
+            <div class="logo">
+              <a href="#top"><img src="img/logo-tp.png" alt="logo" /></a>
+            </div>
+
+            <ul class="list-horizontal">
+              <input type="checkbox" id="input-dropdown-3" />
+              <li class="active"><a href="#top">Home </a></li>
+              <li><a href="#about-us">About Us </a></li>
+              <li><a href="#service">Service </a></li>
+              <li><a href="#portfolio">Portfolio </a></li>
+              <li><a href="#team">Team </a></li>
+              <li id="li-3">
+                <ul class="dropdown-menu">
+                  <li><a href="#">Drop Down 1</a></li>
+                  <li>
+                    <ul></ul>
+                    <a href="#">Drop Down 2</a>
+                  </li>
+                  <li><a href="#">Drop Down 3</a></li>
+                  <li><a href="#">Drop Down 4</a></li>
+                  <li><a href="#">Drop Down 5</a></li>
+                </ul>
+                <a href="#">
+                  Drop Down
+                  <label for="input-dropdown-3">
+                    <i class="fas fa-chevron-down"></i>
+                    <i class="fas fa-chevron-up"></i>
+                  </label>
+                </a>
+              </li>
+              <li><a href="#contact">Contact Us </a></li>
+            </ul>
+
+            <button class="menu-button">
+              <label for="input-menu">
+                <i class="fas fa-bars"></i>
+              </label>
+            </button>
+          </section>
+        </div>
+      </header>
+    </section>
+
+    <section id="hero">
+      <div class="container-hero">
+        <img src="img/intro-img.svg" alt="" class="hero-img" />
+        <div class="container-button-text">
+          <div class="container-text-hero">
+            <h2>
+              We provide
+              <br />
+              <span class="color-blue-light"> <u>solutions</u> </span>
+              <br />
+              for your business!
+            </h2>
+          </div>
+          <div class="container-button">
+            <a href="#about-us"
+              ><button class="button-hero button-light-blue">
+                Get Started
+              </button></a
+            >
+            <a href="#service">
+              <button class="button-hero button-border-white">
+                Our Services
+              </button></a
+            >
+          </div>
+        </div>
       </div>
-    </header>
+    </section>
 
     <div class="navigation-arrow-container">
-        <a href="#">
-            <i class="fas fa-angle-up"></i>
-        </a>
-    </div>
-    
-
-    <div class="hero">
-      <img src="img/intro-img.svg" alt="" class="hero-img margin-button-30px" />
-      <div class="container-text-hero">
-        <h2>
-          We provide
-          <br />
-          <span class="color-blue-light"> <u>solutions</u> </span>
-          <br />
-          for your business!
-        </h2>
-      </div>
-      <div class="container-button">
-        <!-- agregar anchors -->
-        <a href="#about-us"
-          ><button class="button-hero button-light-blue">Get Started</button></a
-        >
-        <a href="#services">
-          <button class="button-hero button-border-white">
-            Our Services
-          </button></a
-        >
-      </div>
+      <a href="#top">
+        <i class="fas fa-angle-up"></i>
+      </a>
     </div>
     <!------start About Us------->
     <section id="about-us">
-        <h3 class="about-tittle">About Us</h3> 
-        <p class="about-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="div-box-about-1" >
-            <img src="img/about-img.svg" class="orden-2">
-            <div class="div-box-about">
-                <p class="about-main">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <div class="container-about">
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="fas fa-shopping-bag"></i>
-                        </div>
-                        <div class="about-card-content">
-                            <h4><a href="#">Eiusmod Tempor</a></h4>
-                            <p class="description">
-                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="far fa-image"></i>
-                        </div>
-                        <div class="about-card-content">
-                            <h4><a href="#">Magni Dolores</a></h4>
-                            <p class="description">
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-card">
-                        <div class="about-icon">
-                            <i class="far fa-chart-bar"></i>
-                        </div>
-                        <div class="about-card-content">
-                            <h4><a href="#">Dolor Sitema</a></h4>
-                            <p class="description">
-                                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata
-                            </p>
-                        </div>
-                    </div>
-                </div>
+      <h3 class="about-tittle">About Us</h3>
+      <p class="about-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="div-box-about-1">
+        <img src="img/about-img.svg" class="orden-2" />
+        <div class="div-box-about">
+          <p class="about-main">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+          <div class="container-about">
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div class="about-card-content">
+                <h4><a href="#">Eiusmod Tempor</a></h4>
+                <p class="description">
+                  Et harum quidem rerum facilis est et expedita distinctio. Nam
+                  libero tempore, cum soluta nobis est eligendi
+                </p>
+              </div>
             </div>
-        </div>
-        
-        
-        <div class="main-about-us">
-            <img class="2nd-img"src="img/about-extra-1.svg">
-            <div class="main-description-2">
-                <h4 class="about-tittle-2">
-                    Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.
-                </h4>
-                <p class="about-description-2">
-                    Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="far fa-image"></i>
+              </div>
+              <div class="about-card-content">
+                <h4><a href="#">Magni Dolores</a></h4>
+                <p class="description">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum
                 </p>
-                <p class="about-description-2">
-                    Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
-                </p>
+              </div>
             </div>
-        </div>
-        <div class="main-about-us">
-            <img src="img/about-extra-2.svg" class="orden-2">
-            <div class="main-description-2">
-                <h4 class="about-tittle-2">
-                    Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora facere reprehenderit.
-                </h4>
-                <p class="about-description-2">
-                    Delectus alias ut incidunt delectus nam placeat in consequatur. Sed cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque fugit earum est quam officiis numquam. Ducimus corporis autem at blanditiis beatae incidunt sunt.
+            <div class="about-card">
+              <div class="about-icon">
+                <i class="far fa-chart-bar"></i>
+              </div>
+              <div class="about-card-content">
+                <h4><a href="#">Dolor Sitema</a></h4>
+                <p class="description">
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
                 </p>
-                <p class="about-description-2">
-                    Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae debitis. Dolorem cupiditate est perferendis iusto.
-                </p>
-                <p class="about-description-2">
-                    Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint quia modi. Numquam est aut fuga mollitia exercitationem nam accusantium provident quia.
-                </p>
+              </div>
             </div>
-            
+          </div>
         </div>
-        
+      </div>
+
+      <div class="main-about-us">
+        <img class="2nd-img" src="img/about-extra-1.svg" />
+        <div class="main-description-2">
+          <h4 class="about-tittle-2">
+            Voluptatem dignissimos provident quasi corporis voluptates sit
+            assumenda.
+          </h4>
+          <p class="about-description-2">
+            Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati
+            possimus ea. Quas molestiae perspiciatis occaecati qui rerum.
+            Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae
+            non ad at et a.
+          </p>
+          <p class="about-description-2">
+            Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit
+            qui asperiores ea corporis deserunt veritatis quidem expedita
+            perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum
+            eum eum.
+          </p>
+        </div>
+      </div>
+      <div class="main-about-us">
+        <img src="img/about-extra-2.svg" class="orden-2" />
+        <div class="main-description-2">
+          <h4 class="about-tittle-2">
+            Neque saepe temporibus repellat ea ipsum et. Id vel et quia tempora
+            facere reprehenderit.
+          </h4>
+          <p class="about-description-2">
+            Delectus alias ut incidunt delectus nam placeat in consequatur. Sed
+            cupiditate quia ea quis. Voluptas nemo qui aut distinctio. Cumque
+            fugit earum est quam officiis numquam. Ducimus corporis autem at
+            blanditiis beatae incidunt sunt.
+          </p>
+          <p class="about-description-2">
+            Voluptas saepe natus quidem blanditiis. Non sunt impedit voluptas
+            mollitia beatae. Qui esse molestias. Laudantium libero nisi vitae
+            debitis. Dolorem cupiditate est perferendis iusto.
+          </p>
+          <p class="about-description-2">
+            Eum quia in. Magni quas ipsum a. Quis ex voluptatem inventore sint
+            quia modi. Numquam est aut fuga mollitia exercitationem nam
+            accusantium provident quia.
+          </p>
+        </div>
+      </div>
     </section>
-<!------finish About Us------->
+    <!------finish About Us------->
 
-<!--------start services---------->
+    <!--------start services---------->
     <section id="service">
-        <div class="service-container">
-            <h3 class="service-tittle">Services</h3>
-            <p class="service-subtittle">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-            
-            <div class="service-card">
-                <div class="icon">
-                    <i class="fab fa-stumbleupon-circle"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Lorem Ipsum</h4>
-                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <i class="far fa-file-alt"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Dolor Sitema</h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Sed ut perspiciatis</h4>
-                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <i class="fas fa-tachometer-alt"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Magni Dolores</h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <i class="fas fa-globe"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Nemo Enim</h4>
-                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                </div>
-            </div>
-            <div class="service-card">
-                <div class="icon">
-                    <i class="far fa-clock"></i>
-                </div>
-                <div class="card-content">
-                    <h4>Eiusmod Tempor</h4>
-                    <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-                </div>
-            </div>
+      <div class="service-container">
+        <h3 class="service-tittle">Services</h3>
+        <p class="service-subtittle">
+          Laudem latine persequeris id sed, ex fabulas delectus quo. No vel
+          partiendo abhorreant vituperatoribus.
+        </p>
+
+        <div class="service-card">
+          <div class="icon">
+            <i class="fab fa-stumbleupon-circle"></i>
+          </div>
+          <div class="card-content">
+            <h4>Lorem Ipsum</h4>
+            <p class="description">
+              Voluptatum deleniti atque corrupti quos dolores et quas molestias
+              excepturi sint occaecati cupiditate non provident
+            </p>
+          </div>
         </div>
-    </section> 
-<!--------finish services---------->
+        <div class="service-card">
+          <div class="icon">
+            <i class="far fa-file-alt"></i>
+          </div>
+          <div class="card-content">
+            <h4>Dolor Sitema</h4>
+            <p class="description">
+              Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat tarad limino ata
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="card-content">
+            <h4>Sed ut perspiciatis</h4>
+            <p class="description">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <div class="card-content">
+            <h4>Magni Dolores</h4>
+            <p class="description">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="card-content">
+            <h4>Nemo Enim</h4>
+            <p class="description">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesentium voluptatum deleniti atque
+            </p>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="icon">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="card-content">
+            <h4>Eiusmod Tempor</h4>
+            <p class="description">
+              Et harum quidem rerum facilis est et expedita distinctio. Nam
+              libero tempore, cum soluta nobis est eligendi
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------finish services---------->
     <section class="why-choose-us">
-        <h2>Why choose us?</h2>
-        <p class="why-p">Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
-        
-        <div class="why-card">
-            <i class="far fa-gem"></i>
-            <div class="why-card-body">
-                <h3>Corporis dolorem</h3>
-                <p>Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
-                <a class="why-white-anchor" href="#">Read more</a>
-            </div>
-        </div>
+      <h2>Why choose us?</h2>
+      <p class="why-p">
+        Laudem latine persequeris id sed, ex fabulas delectus quo. No vel
+        partiendo abhorreant vituperatoribus.
+      </p>
 
-        <div class="why-card">
-            <i class="fas fa-language"></i>
-            <div class="why-card-body">
-                <h3>Voluptates dolores</h3>
-                <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
-                <a class="why-white-anchor" href="#">Read more</a>
-            </div>
+      <div class="why-card">
+        <i class="far fa-gem"></i>
+        <div class="why-card-body">
+          <h3>Corporis dolorem</h3>
+          <p>
+            Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus
+            sunt ab inventore officiis aut voluptatibus.
+          </p>
+          <a class="why-white-anchor" href="#">Read more</a>
         </div>
+      </div>
 
-        <div class="why-card">
-            <i class="far fa-object-group"></i>
-            <div class="why-card-body">
-                <h3>Eum ut aspernatur</h3>
-                <p>Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex.</p>
-                <a class="why-white-anchor" href="#">Read more</a>
-            </div>
+      <div class="why-card">
+        <i class="fas fa-language"></i>
+        <div class="why-card-body">
+          <h3>Voluptates dolores</h3>
+          <p>
+            Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus
+            dolorum aspernatur.
+          </p>
+          <a class="why-white-anchor" href="#">Read more</a>
         </div>
+      </div>
 
-        <div class="why-impact-numbers">
-            <div class="why-impact-numbers-block">
-                <span class="impact-number">274</span>
-                <span class="impact-description">Clients</span>
-            </div>
-            <div class="why-impact-numbers-block">
-                <span class="impact-number">421</span>
-                <span class="impact-description">Projects</span>
-            </div>
-            <div class="why-impact-numbers-block">
-                <span class="impact-number">1,364</span>
-                <span class="impact-description">Hours Of Support</span>
-            </div>
-            <div class="why-impact-numbers-block">
-                <span class="impact-number">18</span>
-                <span class="impact-description">Hard Workers</span>
-            </div> 
+      <div class="why-card">
+        <i class="far fa-object-group"></i>
+        <div class="why-card-body">
+          <h3>Eum ut aspernatur</h3>
+          <p>
+            Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in
+            non nemo ex.
+          </p>
+          <a class="why-white-anchor" href="#">Read more</a>
         </div>
+      </div>
+
+      <div class="why-impact-numbers">
+        <div class="why-impact-numbers-block">
+          <span class="impact-number">274</span>
+          <span class="impact-description">Clients</span>
+        </div>
+        <div class="why-impact-numbers-block">
+          <span class="impact-number">421</span>
+          <span class="impact-description">Projects</span>
+        </div>
+        <div class="why-impact-numbers-block">
+          <span class="impact-number">1,364</span>
+          <span class="impact-description">Hours Of Support</span>
+        </div>
+        <div class="why-impact-numbers-block">
+          <span class="impact-number">18</span>
+          <span class="impact-description">Hard Workers</span>
+        </div>
+      </div>
     </section>
 
     <section class="our-portfolio">
-        <h2>Our Portfolio</h2>
-        <div class="portfolio-button-container">
-            <button class="portfolio-button-selected">ALL</button>
-            <button class="portfolio-button">APP</button>
-            <button class="portfolio-button">CARD</button>
-            <button class="portfolio-button">WEB</button>
-        </div>
+      <h2>Our Portfolio</h2>
+      <div class="portfolio-button-container">
+        <button class="portfolio-button-selected">ALL</button>
+        <button class="portfolio-button">APP</button>
+        <button class="portfolio-button">CARD</button>
+        <button class="portfolio-button">WEB</button>
+      </div>
 
-        <div class="portfolio-img-container">
-            <div id="portfolio-1" class="portfolio-img">
-                <img src="img/portfolio/app1.jpg" alt="App">
-                <div class="portfolio-img-overlay">
-                    <h4>App 1</h4>
-                    <span>APP</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-1">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="portfolio-img-container">
+        <div id="portfolio-1" class="portfolio-img">
+          <img src="img/portfolio/app1.jpg" alt="App" />
+          <div class="portfolio-img-overlay">
+            <h4>App 1</h4>
+            <span>APP</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-1">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-2" class="portfolio-img">
-                <img src="img/portfolio/web3.jpg" alt="Web">
-                <div class="portfolio-img-overlay">
-                    <h4>Web 3</h4>
-                    <span>WEB</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-2">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-2" class="portfolio-img">
+          <img src="img/portfolio/web3.jpg" alt="Web" />
+          <div class="portfolio-img-overlay">
+            <h4>Web 3</h4>
+            <span>WEB</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-2">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-3" class="portfolio-img">
-                <img class="img-translate-3" src="img/portfolio/app2.jpg" alt="App">
-                <div class="portfolio-img-overlay">
-                    <h4>App 2</h4>
-                    <span>APP</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-3">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-3" class="portfolio-img">
+          <img class="img-translate-3" src="img/portfolio/app2.jpg" alt="App" />
+          <div class="portfolio-img-overlay">
+            <h4>App 2</h4>
+            <span>APP</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-3">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-4" class="portfolio-img">
-                <img class="img-translate-4" src="img/portfolio/web1.jpg" alt="Web">
-                <div class="portfolio-img-overlay">
-                    <h4>Web 1</h4>
-                    <span>WEB</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-4">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-4" class="portfolio-img">
+          <img class="img-translate-4" src="img/portfolio/web1.jpg" alt="Web" />
+          <div class="portfolio-img-overlay">
+            <h4>Web 1</h4>
+            <span>WEB</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-4">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-5" class="portfolio-img">
-                <img class="img-translate-5" src="img/portfolio/card2.jpg" alt="Card">
-                <div class="portfolio-img-overlay">
-                    <h4>Card 2</h4>
-                    <span>CARD</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-5">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-5" class="portfolio-img">
+          <img
+            class="img-translate-5"
+            src="img/portfolio/card2.jpg"
+            alt="Card"
+          />
+          <div class="portfolio-img-overlay">
+            <h4>Card 2</h4>
+            <span>CARD</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-5">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-6" class="portfolio-img">
-                <img class="img-translate-6" src="img/portfolio/web2.jpg" alt="Web">
-                <div class="portfolio-img-overlay">
-                    <h4>Web 2</h4>
-                    <span>WEB</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-6">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-6" class="portfolio-img">
+          <img class="img-translate-6" src="img/portfolio/web2.jpg" alt="Web" />
+          <div class="portfolio-img-overlay">
+            <h4>Web 2</h4>
+            <span>WEB</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-6">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-7" class="portfolio-img">
-                <img src="img/portfolio/app3.jpg" alt="App">
-                <div class="portfolio-img-overlay">
-                    <h4>App 3</h4>
-                    <span>APP</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-7">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-7" class="portfolio-img">
+          <img src="img/portfolio/app3.jpg" alt="App" />
+          <div class="portfolio-img-overlay">
+            <h4>App 3</h4>
+            <span>APP</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-7">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-8" class="portfolio-img">
-                <img src="img/portfolio/card1.jpg" alt="Card">
-                <div class="portfolio-img-overlay">
-                    <h4>Card 1</h4>
-                    <span>CARD</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-8">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-8" class="portfolio-img">
+          <img src="img/portfolio/card1.jpg" alt="Card" />
+          <div class="portfolio-img-overlay">
+            <h4>Card 1</h4>
+            <span>CARD</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-8">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
+        </div>
 
-            <div id="portfolio-9" class="portfolio-img">
-                <img src="img/portfolio/card3.jpg" alt="Card">
-                <div class="portfolio-img-overlay">
-                    <h4>Card 3</h4>
-                    <span>CARD</span>
-                    <div class="portfolio-icon-container">
-                        <a href="#portfolio-modal-9">
-                            <i class="fas fa-eye"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fas fa-external-link-alt"></i>
-                        </a>
-                    </div>
-                </div>
+        <div id="portfolio-9" class="portfolio-img">
+          <img src="img/portfolio/card3.jpg" alt="Card" />
+          <div class="portfolio-img-overlay">
+            <h4>Card 3</h4>
+            <span>CARD</span>
+            <div class="portfolio-icon-container">
+              <a href="#portfolio-modal-9">
+                <i class="fas fa-eye"></i>
+              </a>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
+          </div>
         </div>
-        <!-- ACÁ EMPIEZAN LAS VENTANAS MODALES DE PORTFOLIO-->
-        <div id="portfolio-modal-1" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img src="img/portfolio/app1.jpg" alt="App">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">App 1</p>
-                        <p>Image 1 of 9</p>
-                    </div>
-                    <a href="#portfolio-1">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      </div>
+      <!-- ACÁ EMPIEZAN LAS VENTANAS MODALES DE PORTFOLIO-->
+      <div id="portfolio-modal-1" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img src="img/portfolio/app1.jpg" alt="App" />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">App 1</p>
+              <p>Image 1 of 9</p>
+            </div>
+            <a href="#portfolio-1">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-2" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img src="img/portfolio/web3.jpg" alt="Web">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">Web 3</p>
-                        <p>Image 2 of 9</p>
-                    </div>
-                    <a href="#portfolio-2">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-2" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img src="img/portfolio/web3.jpg" alt="Web" />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">Web 3</p>
+              <p>Image 2 of 9</p>
+            </div>
+            <a href="#portfolio-2">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-3" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img class="img-translate-3" src="img/portfolio/app2.jpg" alt="App">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">App 2</p>
-                        <p>Image 3 of 9</p>
-                    </div>
-                    <a href="#portfolio-3">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-3" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img
+              class="img-translate-3"
+              src="img/portfolio/app2.jpg"
+              alt="App"
+            />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">App 2</p>
+              <p>Image 3 of 9</p>
+            </div>
+            <a href="#portfolio-3">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-4" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img src="img/portfolio/web1.jpg" alt="Web">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">Web 1</p>
-                        <p>Image 4 of 9</p>
-                    </div>
-                    <a href="#portfolio-4">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-4" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img src="img/portfolio/web1.jpg" alt="Web" />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">Web 1</p>
+              <p>Image 4 of 9</p>
+            </div>
+            <a href="#portfolio-4">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-5" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img class="img-translate-5" src="img/portfolio/card2.jpg" alt="Card">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">Card 2</p>
-                        <p>Image 5 of 9</p>
-                    </div>
-                    <a href="#portfolio-5">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-5" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img
+              class="img-translate-5"
+              src="img/portfolio/card2.jpg"
+              alt="Card"
+            />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">Card 2</p>
+              <p>Image 5 of 9</p>
+            </div>
+            <a href="#portfolio-5">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-6" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img class="img-translate-6" src="img/portfolio/web2.jpg" alt="Web">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">Web 2</p>
-                        <p>Image 6 of 9</p>
-                    </div>
-                    <a href="#portfolio-6">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-6" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img
+              class="img-translate-6"
+              src="img/portfolio/web2.jpg"
+              alt="Web"
+            />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">Web 2</p>
+              <p>Image 6 of 9</p>
+            </div>
+            <a href="#portfolio-6">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-7" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img src="img/portfolio/app3.jpg" alt="App">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">App 3</p>
-                        <p>Image 7 of 9</p>
-                    </div>
-                    <a href="#portfolio-7">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-7" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img src="img/portfolio/app3.jpg" alt="App" />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">App 3</p>
+              <p>Image 7 of 9</p>
+            </div>
+            <a href="#portfolio-7">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-8" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img src="img/portfolio/card1.jpg" alt="Card">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">Card 1</p>
-                        <p>Image 8 of 9</p>
-                    </div>
-                    <a href="#portfolio-8">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
+      <div id="portfolio-modal-8" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img src="img/portfolio/card1.jpg" alt="Card" />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">Card 1</p>
+              <p>Image 8 of 9</p>
+            </div>
+            <a href="#portfolio-8">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
 
-        <div id="portfolio-modal-9" class="target-modal">
-            <figure>
-                <div class="modal-img-container">
-                    <img src="img/portfolio/card3.jpg" alt="Card">
-                </div>
-                <figcaption>
-                    <div class="modal-caption-container">
-                        <p class="caption-title">Card 3</p>
-                        <p>Image 9 of 9</p>
-                    </div>
-                    <a href="#portfolio-9">
-                        <i class="fas fa-times"></i>
-                    </a>
-                </figcaption>
-            </figure>  
-        </div>
-        <!-- ACÁ TERMINAN LAS VENTANAS MODALES DE PORTFOLIO-->
+      <div id="portfolio-modal-9" class="target-modal">
+        <figure>
+          <div class="modal-img-container">
+            <img src="img/portfolio/card3.jpg" alt="Card" />
+          </div>
+          <figcaption>
+            <div class="modal-caption-container">
+              <p class="caption-title">Card 3</p>
+              <p>Image 9 of 9</p>
+            </div>
+            <a href="#portfolio-9">
+              <i class="fas fa-times"></i>
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- ACÁ TERMINAN LAS VENTANAS MODALES DE PORTFOLIO-->
     </section>
-    		<!-- Testimonials -->
+    
+    	<!-- Testimonials -->
 		<section id="testimonials">
 			<header class="testimonials-header">
 				<h2>Testimonials</h2>
@@ -693,8 +811,8 @@
 			</div>
 		</section>
 		<!-- Testimonials -->
-
-		<!-- Team -->
+    
+    <!-- Team -->
 		<section id="team">
 			<div class="team-header">
 				<h2>Team</h2>
@@ -769,7 +887,9 @@
 				</div>
 			</div>
 		</section>
-		<!-- Team -->
+		<!-- Team -->    	
+
+		
 
 		<!-- Clients -->
 		<section id="clients">
@@ -834,4 +954,3 @@
 		<!-- Clients -->
 </body>
 </html>
-
