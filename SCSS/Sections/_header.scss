@@ -1,7 +1,7 @@
 @import "../abstract/mixins";
 @import "../abstract/variables";
 
-.menu {
+.header-menu {
   @include display-flex(space-between);
   width: 100%;
   height: 100%;
@@ -9,7 +9,7 @@
 
   @include breakpoint-desktop {
     margin: 0 30px;
-    @include display-flex(space-around);
+    flex-wrap: nowrap;
   }
 }
 
@@ -132,9 +132,9 @@ nav {
 }
 
 .logo {
-  width: 10%;
+  flex: 0 0 10%;
   @include breakpoint-desktop {
-    width: 25%;
+    flex: 0 0 25%;
   }
 
   a {
@@ -215,23 +215,38 @@ section.aside-nav,
 /*Desktop*/
 
 .list-horizontal {
-  width: 50%;
   @include breakpoint-mobile-1 {
     display: none;
   }
   @include breakpoint-desktop {
-    display: block;
+    display: inline-block;
     padding: 0;
     margin: 0;
-    width: 75%;
+    padding-right: 80px;
     text-align: right;
   }
   ul {
     width: 100%;
     @include display-flex(space-around);
+  
+
+    &.dropdown-side {
+      position: absolute;
+      height: 200px;
+      margin-top: 10px;
+      background-color: white;
+      left: 100%;
+      padding: 0 5px;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+      transition: ease all 0.3s;
+      width: 160px;
+    }
+   
   }
 
   li {
+    text-align: center;
+    align-items: center;
     padding: 0 10px;
     transition: 0.3s;
     font-size: 14px;
@@ -241,12 +256,9 @@ section.aside-nav,
     &.active {
       color: #74b5fc;
     }
-
-    a {
-      display: inline;
-      position: relative;
-    }
+   
   }
+
 
   #input-dropdown-3:not(:checked) ~ li a label .fa-chevron-up {
     display: none;
@@ -273,22 +285,87 @@ section.aside-nav,
 #input-dropdown-3 {
   display: none;
 }
-.dropdown-icon {
-  position: absolute;
-  right: 15px;
-}
+
 .container-text-hero {
   width: 100%;
 }
 
-#li-3 {
+.vertical-list {
   position: relative;
-  height: 100%;
-  transition-duration: 0.4s;
-  // visibility: visible;
-  // > ul {
-  //   display: none;
-  // }
+
+  &.vertical-padding {
+    padding-bottom: 20px;
+  }
+  ul#vertical-dropdown-1 {
+    display: none;
+  }
+  .p-relative > .dropdown-icon {
+    right: 8px;
+    font-size: 12px;
+    bottom: 2px;
+    position: absolute;
+
+    .fa-chevron-left {
+      display: none;
+    }
+  }
+  .dropdown-icon {
+    .fa-chevron-up {
+      display: none;
+    }
+  }
+
+  &:hover {
+    > a,
+    > .dropdown-icon {
+      color: #74b5fc;
+    }
+    ul#vertical-dropdown-1 {
+      display: flex;
+      width: 165px;
+
+      .p-relative:hover ul#vertical-dropdown-2.dropdown-menu-right {
+        display: flex;
+        li {
+          padding: 10px;
+        }
+      }
+      .p-relative:hover > a,
+      .p-relative:hover > .dropdown-icon {
+        color: #74b5fc;
+      }
+
+      .p-relative:hover > .dropdown-icon {
+        .fa-chevron-left {
+          display: block;
+        }
+        .fa-chevron-right {
+          display: none;
+        }
+      }
+    }
+    .dropdown-icon {
+      .fa-chevron-up {
+        display: inline-block;
+      }
+      .fa-chevron-down {
+        display: none;
+      }
+    }
+  }
+}
+
+ul#vertical-dropdown-2.dropdown-menu-right {
+  display: none;
+  position: absolute;
+  left: 165px;
+  top: -25px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  padding: 0 5px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: ease all 0.3s;
 }
 
 .dropdown-menu {
@@ -298,7 +375,16 @@ section.aside-nav,
   margin-top: 10px;
   background-color: white;
   left: 0;
-  padding: 0 5px;
+  padding: 0;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: ease all 0.3s;
+  li {
+    width: 100%;
+  }
+}
+.p-relative {
+  position: relative;
+}
+li:hover{
+  color: $color-blue-light;
 }
