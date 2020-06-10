@@ -1,0 +1,143 @@
+/*EMPIEZAN ESTILOS CONTACT US*/
+
+@media (min-width: 320px) {
+    .ContactUS {
+        width: 100vw;
+        font-family: "Montserrat", sans-serif;
+    }
+    .CU-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ContactUS h2 {
+        font-size: 34px;
+        color: #283d50;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .contact-info {
+        color: gray;
+        font-size: 12px;
+        width: 90vw;
+    }
+    .contact-info i {
+        color: #007bfe;
+        font-size: 25px;
+        margin: 15px;
+        margin-left: 0;
+    }
+    .ContactUS form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .f-name,
+    .f-email,
+    .f-subject,
+    .ContactUS textarea {
+        width: 90vw;
+        padding: 10px;
+        margin-bottom: 15px;
+        color: gray;
+        border: 1px solid rgb(197, 197, 197);
+    }
+    .f-send {
+        background: #007bfe;
+        color: white;
+        width: 180px;
+        border-radius: 30px;
+        padding: 10px;
+        border: none;
+        font-size: 17px;
+    }
+  }
+  
+  
+  /* Breakpoint de tablet */
+  
+  @media (min-width: 768px) {
+    .left-side iframe {
+        width: 700px;
+        height: 300px;
+    }
+    .contact-info {
+        color: gray;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+    }
+  }
+  
+  
+  /* Breakpoint de desktop/tablet */
+  
+  @media (min-width: 955px) {
+    .left-side iframe {
+        width: 900px;
+        height: 300px;
+    }
+    .f-name,
+    .f-email,
+    .f-subject,
+    .ContactUS textarea,
+    .contact-info {
+        width: 95vw;
+        font-size: 14px;
+    }
+  }
+  
+  
+  /* Breakpoint de desktop */
+  
+  @media (min-width: 1024px) {
+    .CU-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+    }
+    .left-side {
+        width: 45vw;
+    }
+    .right-side {
+        width: 45vw;
+        position: relative;
+        padding-bottom: 40px;
+    }
+    .right-side form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .f-send {
+        position: absolute;
+        left: 50%;
+        bottom: 3%;
+        transform: translate(-50%, -3%);
+        -webkit-transform: translate(-50%, -3%);
+    }
+    .f-name,
+    .f-email {
+        width: 48%;
+        font-size: 14px;
+    }
+    .f-subject,
+    .ContactUS textarea,
+    .contact-info {
+        width: 100%;
+        font-size: 14px;
+    }
+    .left-side iframe {
+        width: 45vw;
+        height: 45vh;
+    }
+  }
+  
+  
+  /*FIN ESTILOS CONTACT US*/
